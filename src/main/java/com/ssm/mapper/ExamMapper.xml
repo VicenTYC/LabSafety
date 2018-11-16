@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.ssm.mapper.ExamMapper">
+    <select id="getQuestionBankTypeList"  resultType="com.ssm.pojo.BankType">
+          SELECT
+           *
+          FROM bank_type                 
+     </select>  
+     
+      <select id="getQuestionList"  parameterType="int" resultType="com.ssm.pojo.Question">
+          SELECT
+           *
+          FROM question_bank
+          where bank_id=#{banktype} and question_type=#{qtype}
+          limit 0,15                 
+     </select>        
+    <select id="getQuestionByType"  parameterType="int" resultType="com.ssm.pojo.Question">
+         SELECT
+           *
+          FROM question_bank
+          where bank_id=#{qbank} and question_type=#{qtype}
+          limit #{staNum},15               
+     </select>
+       <select id="getAmount"  parameterType="int" resultType="int">
+         SELECT
+           count(*)
+          FROM question_bank
+          where bank_id=#{banktype} and question_type=#{qtype}            
+     </select>
+     <delete id="deleteQuestionById" parameterType="int">
+           delete from question_bank
+           where question_id=#{qid}
+     </delete>
+     <insert id="addQuestion"  parameterType="com.ssm.pojo.Question">
+		      insert into
+		      question_bank
+		      ( question_content,question_item,question_answer,question_type,bank_id,question_analysis)
+		      values
+		      (#{question_content},#{question_item},#{question_answer},#{question_type},#{bank_id},#{question_analysis})
+     </insert>
+    
+      <select id="getExamByName"  parameterType="String" resultType="com.ssm.pojo.Exam">
+         SELECT
+           *
+          FROM exam
+          where exam_name=#{exam_name}             
+     </select>
+     <select id="getExamList" parameterType="int" resultType="com.ssm.pojo.Exam">
+         SELECT
+           *
+          FROM exam
+          where teacher_id=#{teacherId}
+     </select>
+     <select id="getQuestionByBank" resultType="com.ssm.pojo.Question">
+        select *
+        from question_bank
+       <if test="null != banks">  
+        where bank_id in
+        <foreach collection="banks" item="bankId" open="(" separator="," close=")">
+           #{bankId}        
+        </foreach>
+        and question_type = #{questionType};
+     
+       </if>
+        
+     </select>
+     <insert id="addExam" useGeneratedKeys="true" keyProperty="exam_id"  parameterType="com.ssm.pojo.Exam" >
+          insert into
+          exam
+          ( exam_name, bank_type,exam_begin_time,exam_duration,teacher_id, single_num, single_score, mulit_num, mulit_score,torf_num,torf_score)
+          values
+          (#{exam_name},#{bank_type},#{exam_begin_time},#{exam_duration},#{teacher_id},#{single_num},#{single_score},#{mulit_num},#{mulit_score},#{torf_num},#{torf_score})
+          
+     </insert>
+     <insert id="addExamQuestion" useGeneratedKeys="true" parameterType="list" >
+          insert into
+          exam_question
+          (question_id, question_content,question_item,question_answer,question_type,exam_id,question_analysis)
+           values
+          <foreach collection="questions" item="que" index="index" separator=",">         
+           (#{que.question_id}, #{que.question_content}, #{que.question_item}, #{que.question_answer}, #{que.question_type}, #{que.exam_id}, #{que.question_analysis})
+          </foreach>          
+     </insert>
+     <delete id="deleteExamById" parameterType="int">
+          delete
+          from exam
+          where exam_id=#{examId}
+     </delete>
+ </mapper> 

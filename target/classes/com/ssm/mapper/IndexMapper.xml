@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.ssm.mapper.IndexMapper">
+    <select id="getRegulation"  parameterType="int" resultType="com.ssm.pojo.Regulation">
+          SELECT
+           file_id,file_name,file_date
+          FROM regulation_rules 
+          ORDER BY file_date
+          LIMIT #{currentPage},#{pageSize}          
+     </select>     
+     <select id="getFileRule"  parameterType="int" resultType="com.ssm.pojo.FileRule">
+          SELECT
+           *
+          FROM file_rules 
+          ORDER BY file_date
+          LIMIT #{start},15           
+     </select>
+     <select id="getSystemNotice"  parameterType="int" resultType="com.ssm.pojo.SystemNotice">
+          SELECT
+          notice_id,notice_name,notice_date
+          FROM system_notice 
+          ORDER BY notice_date
+          LIMIT #{currentPage},#{pageSize}          
+     </select>
+     <select id="getFileTypeList" resultType="com.ssm.pojo.FileType">
+           select *
+           from file_type
+           order by type_id
+     </select>
+     <select id="getQuestionBankTypeList" resultType="String">
+           select bank_name
+           from bank_type
+           order by type_id
+     </select>
+     <select id="getLearningFileByType" parameterType="int" resultType="com.ssm.pojo.LearningFile">
+       select *
+       from learning_file
+       where file_type = #{fileType}
+       limit #{start},5
+     </select>
+     <select id="getFileAmount" parameterType="int" resultType="int">
+      select count(*)
+      from learning_file
+      where file_type = #{fileType}
+     </select>
+      <select id="getFileRuleAmount"  resultType="int">
+      select count(*)
+      from file_rules
+     </select>
+    
+ </mapper> 
