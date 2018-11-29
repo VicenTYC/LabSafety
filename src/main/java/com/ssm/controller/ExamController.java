@@ -1,6 +1,8 @@
 package com.ssm.controller;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -142,7 +144,8 @@ public class ExamController {
 
 	@RequestMapping("addExam.do")
 	@ResponseBody
-	private int addExam(Exam exam) {
+	private int addExam(Exam exam) {		
+        exam.setExam_finish_time(finishDate(exam));
 		int resStat = examService.addExam(exam);
 		int ifSus;
 		if (resStat == 0) {
@@ -182,6 +185,7 @@ public class ExamController {
 				torfQuesList.remove(index);
 			}
 			 ifSus = examService.addExamQuestion(questions);
+			 
 			}
 			catch (Exception e) {
 				examService.deleteExamById(examId);
@@ -202,6 +206,12 @@ public class ExamController {
 			return 200;
 		else
 			return 500;
+	}
+	@RequestMapping("addStudent.do")
+	@ResponseBody
+	private int addStudent(int exam_id,String collegeId,String majorId,int examPwd) {
+		
+		return 200;
 	}
 
 	private Question makeQuestion(SingleChoiceQuestion que, int qtype) {
@@ -225,5 +235,19 @@ public class ExamController {
 		q.setQuestion_type(que.getQuestion_type());
 		q.setQuestion_id(que.getQuestion_id());
 		return q;
+	}
+	private Date finishDate(Exam exam) {
+		Date startDate = exam.getExam_begin_time();
+		Date duration = exam.getExam_duration();
+		Calendar strCal = Calendar.getInstance(),durCal = Calendar.getInstance();
+		strCal.setTime(startDate);
+		durCal.setTime(duration);
+        int hour = durCal.get(Calendar.HOUR_OF_DAY);
+        int minute = durCal.get(Calendar.MINUTE);
+        int second  = durCal.get(Calendar.SECOND);
+        strCal.add(Calendar.HOUR_OF_DAY, hour);
+        strCal.add(Calendar.MINUTE, minute);
+        strCal.add(Calendar.SECOND, second);
+        return strCal.getTime();
 	}
 }

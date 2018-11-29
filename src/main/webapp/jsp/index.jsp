@@ -12,7 +12,6 @@
 	<jsp:include page="top.jsp" />
 
 	<div id="all" class="">
-
 		<div id="main" class="">
 			<div id="left" class="">
 				<div id="left_up" class=""
@@ -165,13 +164,13 @@
 						<p>
 							班级： <span>${student.student_class}</span>
 						</p>
+						<p>
+						  待完成考试：</br><span style="padding-left:30px;style="color:#fb2525;"">${examInfo.exam_name }</span>
+						</p>
+						
 					</blockquote>
 				</div>
-				<button class="layui-btn layui-btn-lg layui-btn-radius">进入考试</button>
-
-				<%-- <center>
-					<img src="./Resource/images/3wm.jpg" width="400px" height="200px">
-				</center> --%>
+				<button id="startExam" class="layui-btn layui-btn-lg layui-btn-radius">进入考试</button>
 			</div>
 
 		</div>
@@ -184,6 +183,27 @@
 		<p>版权所有 西北农林科技大学 Copy © NORTHWEST A&amp;F UNIVERSITY All RIGHTS
 			RESERVED</p>
 	</div>
-
+<script>
+    var examId = ${examInfo.exam_id}; 
+    $("#startExam").click(function(){
+    	$.ajax({
+    		url : 'startExam.do',
+			method : 'post',
+			data : {
+				examId :examId;
+			},
+			dataType : 'JSON',
+			success : function(res) {
+				
+			},
+			error : function(data) {
+				layer.msg('出了点错误，正在修！', {
+					time : 500
+				});
+			}
+    	});
+    	
+    };)
+</script>
 </body>
 </html>

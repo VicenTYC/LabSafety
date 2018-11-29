@@ -22,4 +22,8 @@ public interface IndexService {
 
 	int getFileRuleAmount();
 
+	Exam findExam(String date, String student_college, String student_major);
+
+	Exam findExamById(int examId);
+
 }

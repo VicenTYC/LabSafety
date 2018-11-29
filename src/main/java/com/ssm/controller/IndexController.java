@@ -7,15 +7,25 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.net.Inet4Address;
 import java.net.URLEncoder;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+
+import javax.ejb.FinderException;
+import javax.enterprise.inject.New;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import org.apache.http.impl.EnglishReasonPhraseCatalog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor;
+
+import com.ssm.pojo.Exam;
 import com.ssm.pojo.FileRule;
 import com.ssm.pojo.FileType;
 import com.ssm.pojo.LearningFile;
@@ -39,10 +49,12 @@ public class IndexController {
 	
 	@RequestMapping("getIndex.do")
 	public ModelAndView getIndex(HttpServletRequest request, HttpServletResponse response) {
-		/*
-		 * //登陆检查 if(request.getSession().getAttribute("student")==null) { ModelAndView
-		 * mav = new ModelAndView("login"); return mav; }
-		 */
+		
+		//登陆检查
+		if(request.getSession().getAttribute("student")==null) { ModelAndView
+		 mav = new ModelAndView("login"); return mav; 
+		 }
+		
 		ModelAndView mav = new ModelAndView("index");
 		// 获取无内容规章制度名列表
 		List<Regulation> regulationList = indexService.getRegulation(0, 5);
@@ -52,8 +64,12 @@ public class IndexController {
 
 		List<FileType> fileTypeList = getFileTypeList();
 		List<String> questionBankTypeList = getQuestionBankTypeList();
-		// Student student = (Student)request.getSession().getAttribute("student");
-
+		Student student = (Student)request.getSession().getAttribute("student");
+		 SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");//设置日期格式
+		String date =  df.format(new Date());		
+        Exam examInfo =  indexService.findExam(date,student.getStudent_college(),student.getStudent_major());
+        
+        mav.addObject("examInfo",examInfo);		
 		mav.addObject("fileTypeList", fileTypeList);
 		mav.addObject("questionBankTypeList", questionBankTypeList);
 		mav.addObject("regulationList", regulationList);
@@ -161,7 +177,17 @@ public class IndexController {
 		}
 		out.close();
 	}
-
+    @RequestMapping("startExam.do")
+    @ResponseBody
+    private int ifTimeStartExam(int examId) {
+    	Date now = new Date();
+    	Exam exam = indexService.findExamById(examId);
+    	if(now.before(exam.getExam_begin_time()))
+    		return -1;
+		return 0;
+    	
+    }
+	
 	// 获取在线学习的文章类型列表
 	public List<FileType> getFileTypeList() {
 		return indexService.getFileTypeList();

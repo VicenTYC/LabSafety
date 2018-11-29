@@ -11,6 +11,8 @@ public class Exam {
 	private String bank_type;
 	@JsonFormat(pattern = "yyyy年MM月dd日 HH:mm:ss")
 	private Date exam_begin_time;
+	@JsonFormat(pattern = "yyyy年MM月dd日 HH:mm:ss")
+	private Date exam_finish_time;
 	@JsonFormat(pattern = "HH:mm:ss")
 	private Date exam_duration;
 	private int teacher_id;
@@ -20,14 +22,32 @@ public class Exam {
 	private int mulit_score;
 	private int torf_num;
 	private int torf_score;
-	private int if_finish;
+	private String college;
+	private String major;
+	private int exampwd;
 
-	public int getIf_finish() {
-		return if_finish;
+	public String getCollege() {
+		return college;
 	}
 
-	public void setIf_finish(int if_finish) {
-		this.if_finish = if_finish;
+	public int getExampwd() {
+		return exampwd;
+	}
+
+	public void setExampwd(int exampwd) {
+		this.exampwd = exampwd;
+	}
+
+	public void setCollege(String college) {
+		this.college = college;
+	}
+
+	public String getMajor() {
+		return major;
+	}
+
+	public void setMajor(String major) {
+		this.major = major;
 	}
 
 	public int getExam_id() {
@@ -69,6 +89,15 @@ public class Exam {
 			e.printStackTrace();
 		}
 	}
+
+	public Date getExam_finish_time() {
+		return exam_finish_time;
+	}
+
+	public void setExam_finish_time(Date exam_finish_time) {
+		this.exam_finish_time = exam_finish_time;
+	}
+
 	public Date getExam_duration() {
 		return exam_duration;
 	}

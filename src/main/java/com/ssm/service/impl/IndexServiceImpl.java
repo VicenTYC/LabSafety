@@ -51,5 +51,13 @@ public class IndexServiceImpl implements IndexService {
 		return indexMapper.getFileRuleAmount();
 	}
 
+	public Exam findExam(String date, String student_college, String student_major) {
+		return indexMapper.findExam(date,student_college,student_major);
+	}
+
+	public Exam findExamById(int examId) {
+		return indexMapper.findExamById(examId);
+	}
+
 
 }

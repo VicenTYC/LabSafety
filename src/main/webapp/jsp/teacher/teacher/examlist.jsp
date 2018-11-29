@@ -18,27 +18,31 @@
 			id="examtable">
 
 			<tr>
-				<th class="col-2">考试场次ID</th>
-				<th class="col-2">考试名称</th>
+				<th class="col-0"> </th>
+				<th class="col-1">考试名称</th>
+				<th class="col-2">测试学院</th>
+				<th class="col-2">测试专业</th>
+				<th class="col-1">考试口令</th>
 				<th class="col-2">开考时间</th>
-				<th class="col-2">考试时长</th>
-				<th class="col-2">是否结束</th>
-				<th class="col-2">删除</th>
+				<th class="col-1">考试时长</th>
+				<th class="col-2">结束时间</th>
+				<th class="col-1">删除</th>
 			</tr>
 			<c:forEach items="${examList}" var="exam" varStatus="stat">
 				<tr>
 					<td>${stat.count}</td>
 					<td>${exam.exam_name }</td>
+					<td>${exam.college }</td>					
+					<td>${exam.major }</td>	
+					<td>${exam.exampwd }</td>								
 					<td><fmt:formatDate value="${exam.exam_begin_time }"
 							pattern="yyyy年MM月dd日 HH:mm:ss" /></td>
 					<td><fmt:formatDate value="${exam.exam_duration }"
 							pattern="HH:mm:ss" /></td>
 
-					<td><c:if test="${exam.if_finish == 1}">
-					           已结束
-					     </c:if> <c:if test="${exam.if_finish == 0}">
-					             未结束
-					     </c:if></td>
+					<td><fmt:formatDate value="${ exam.exam_finish_time }"
+							pattern="yyyy年MM月dd日 HH:mm:ss" />					 
+					</td>
 					<td>
 						<div class="btn-group">
 							<a href="javascript:void(0)" class="btn btn-danger"

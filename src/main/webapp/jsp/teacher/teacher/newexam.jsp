@@ -17,7 +17,7 @@
 				<div class="layui-block">
 					<label class="layui-form-label">选择题库</label>
 					<div class="layui-input-inline" style="width: 92%;">
-						<select name="bank_type" xm-select="select1" xm-select-search="">
+						<select name="bank_type" xm-select="select1" xm-select-search="" id="select" xm-select-skin="primary">
 							 <c:forEach var="iter" items="${banktype}">
 								<option value="${iter.type_id}">${iter.bank_name}</option>
 							</c:forEach>
@@ -25,7 +25,19 @@
 					</div>
 				</div>
 			</div>
+            
+		<div class="layui-form-item">
+				<label class="layui-form-label">多级1</label>
+				<div id="cat_ids2"></div>
+		</div>		
 
+		<div class="layui-form-item">
+			<label class="layui-form-label">考试口令</label>
+			<div class="layui-input-block">
+				<input type="text" name="examPwd" required lay-verify="required"
+					placeholder="学生密码" autocomplete="off" class="layui-input">
+			</div>
+		</div>
 			<div class="layui-form-item">
 				<label class="layui-form-label">开考时间</label>
 				<div class="layui-input-block">
@@ -110,9 +122,75 @@
 <script src="jsp/teacher/lib/layui/formSelects-v4.js"
 	type="text/javascript" charset="utf-8"></script>
 <script>
+var catIns2;
+layui.config({
+	base : './'
+}).extend({
+	selectN : './layui_extends/selectN',
+	selectM : './layui_extends/selectM',
+}).use([ 'layer', 'form', 'jquery', 'selectN', 'selectM' ], function() {
+	$ = layui.jquery;
+	var form = layui.form, selectN = layui.selectN;
+	
+	var catData = [ {
+		"id" : 2,
+		"name" : "信息工程学院",
+		"children" : [ {
+			"id" : 21,
+			"name" : "信息管理与信息系统"
+		}, {
+			"id" : 22,
+			"name" : "电子商务"
+		}, {
+			"id" : 23,
+			"name" : "软件工程"
+		}, {
+			"id" : 24,
+			"name" : "计算机科学与技术"
+		} ]
+	} ];
+	var layer = layui.layer, laydate = layui.laydate, form = layui.form;
+	//无限级分类-所有配置
+	catIns2 = selectN({
+		//元素容器【必填】
+		elem : '#cat_ids2'
+		//候选数据【必填】
+		,
+		data : catData
+		//设置了长度
+		,
+		width : null
+		//为真只取最后一个值
+		//,last:true      
+		//空值项提示，可设置为数组['请选择省','请选择市','请选择县']
+		,
+		tips : [ '请选择', '全部专业' ]
+		//事件过滤器，lay-filter名 不设置与选择器相同(去#.)
+		,
+		filter : 'required'
+		//input的name 不设置与选择器相同(去#.)
+		,
+		name : 'cat2'
+		//提交数据分隔符
+		,
+		delimiter : ','
+		//数据的键名
+		,
+		field : {
+			idName : 'id',
+			titleName : 'name',
+			childName : 'children'
+		}
+		//表单区分 form.render(type, filter); 为class="layui-form" 所在元素的 lay-filter="" 的值 
+		,
+		formFilter : null
+	});
+	$('.mayun').click(function() {
+		window.open('https://gitee.com/moretop/layui-select-ext');
+	});
+});
 	layui.use([ 'layer', 'form', 'laydate' ], function() {
-		var layer = layui.layer, laydate = layui.laydate, form = layui.form;
-
+		var form = layui.form;
 		form.verify({
 			fushu : function(value, item) { //value：表单的值、item：表单的DOM对象
 				if (value.trim() < 0)
@@ -127,16 +205,26 @@
 				}
 			}
 		});
-
 		form.on('submit(addexam)', function(data) {
+			var college = catIns2.selected[0].name;
+			var major = catIns2.lastName;
+			var formData = data.field;
+			
+			 $.extend(formData,{college:college});
+			 $.extend(formData,{major:major});
+		    
 			$.ajax({
 				url : 'exam/addExam.do',
 				method : 'post',
-				data : $("#examForm").serialize(),
+				/* data : $("#examForm").serialize(), */
+				data : formData,
 				dataType : 'JSON',
 				success : function(res) {
 					if (res == 0) {
 						$("#examForm")[0].reset();
+						/*
+						   添加成功后多选下拉框无法清空，导致下次直接提交时失败
+						*/
 						layer.msg('添加成功', {
 							time : 1000
 						});

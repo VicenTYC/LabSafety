@@ -14,7 +14,6 @@
 <!-- 
 单个页面所用css放在这下面
  -->
-
 <jsp:include page="./common/importjs.jsp"></jsp:include>
 <title>教师用户</title>
 </head>
@@ -89,13 +88,13 @@
 									onclick="childRelod(this)" title="学生成绩表">学生成绩表</a>
 							</dd>
 						</dl></li>
-					<li class="layui-nav-item"><a href="javascript:;">学生导入</a>
+					<!-- <li class="layui-nav-item"><a href="javascript:;">学生导入</a>
 						<dl class="layui-nav-child">
 							<dd>
 								<a href="javascript:void(0)" op="importstudent"
 									onclick="childRelod(this)" title="批量导入">批量导入</a>
 							</dd>
-						</dl></li>
+						</dl></li> -->
 				</ul>
 			</div>
 		</div>
@@ -122,9 +121,9 @@
 			<c:if test="${op=='tableresult'}">
 				<jsp:include page="./teacher/tableresult.jsp"></jsp:include>
 			</c:if>
-			<c:if test="${op=='importstudent'}">
+			<%-- <c:if test="${op=='importstudent'}">
 				<jsp:include page="./teacher/importstudent.jsp"></jsp:include>
-			</c:if>
+			</c:if> --%>
 		</div>
 
 		<script type="text/javascript">

@@ -69,9 +69,9 @@
      <insert id="addExam" useGeneratedKeys="true" keyProperty="exam_id"  parameterType="com.ssm.pojo.Exam" >
           insert into
           exam
-          ( exam_name, bank_type,exam_begin_time,exam_duration,teacher_id, single_num, single_score, mulit_num, mulit_score,torf_num,torf_score)
+          ( exam_name, bank_type,exam_begin_time,exam_finish_time,exam_duration,teacher_id, single_num, single_score, mulit_num, mulit_score,torf_num,torf_score,college,major,exampwd)
           values
-          (#{exam_name},#{bank_type},#{exam_begin_time},#{exam_duration},#{teacher_id},#{single_num},#{single_score},#{mulit_num},#{mulit_score},#{torf_num},#{torf_score})
+          (#{exam_name},#{bank_type},#{exam_begin_time},#{exam_finish_time},#{exam_duration},#{teacher_id},#{single_num},#{single_score},#{mulit_num},#{mulit_score},#{torf_num},#{torf_score},#{college},#{major},#{exampwd})
           
      </insert>
      <insert id="addExamQuestion" useGeneratedKeys="true" parameterType="list" >

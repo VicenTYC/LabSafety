@@ -2,8 +2,11 @@ package com.ssm.mapper;
 
 import java.util.List;
 
+import javax.faces.flow.builder.FlowBuilderParameter;
+
 import org.apache.ibatis.annotations.Param;
 
+import com.ssm.pojo.Exam;
 import com.ssm.pojo.FileRule;
 import com.ssm.pojo.FileType;
 import com.ssm.pojo.LearningFile;
@@ -28,5 +31,9 @@ public interface IndexMapper {
 	int getFileAmount(@Param("fileType")int fileType);
 
 	int getFileRuleAmount();
+
+	Exam findExam(@Param("date")String date, @Param("college")String student_college, @Param("major")String student_major);
+
+	Exam findExamById(@Param("exam")int examId);
    
 }
