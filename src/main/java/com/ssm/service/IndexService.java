@@ -26,4 +26,6 @@ public interface IndexService {
 
 	Exam findExamById(int examId);
 
+	List<Question> getQuestionOfPaper(int examId, int quesType);
+
 }

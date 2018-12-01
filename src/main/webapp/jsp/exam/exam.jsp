@@ -1,9 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
- <% 
-String path = request.getContextPath(); 
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/"; 
-%> 
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
+%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -12,9 +15,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <title>在线考试</title>
-<link href="../Resource/css/exam_main.css" rel="stylesheet" type="text/css" />
-<link href="../Resource/css/exam_iconfont.css" rel="stylesheet" type="text/css" />
-<link href="../Resource/css/exam_test.css" rel="stylesheet" type="text/css" />
+<link href="./Resource/css/exam_main.css" rel="stylesheet"
+	type="text/css" />
+<link href="./Resource/css/exam_iconfont.css" rel="stylesheet"
+	type="text/css" />
+<link href="./Resource/css/exam_test.css" rel="stylesheet"
+	type="text/css" />
+<link href="./Resource/js/css/layui.css" rel="stylesheet"
+	type="text/css" />
 
 <style>
 .hasBeenAnswer {
@@ -30,291 +38,243 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="test_main">
 			<div class="nr_left">
 				<div class="test">
-					<form action="" method="post">
+					<form action="commitPaper.do" method="post">
 						<div class="test_title">
 							<p class="test_time">
-								<i class="icon iconfont">&#xe6fb;</i><b class="alt-1">01:40</b>
+								<b class="alt-1"></b>
 							</p>
-							<font><input type="button" name="test_jiaojuan" value="交卷"></font>
+							<font><input type="submit" name="test_jiaojuan" value="交卷"></font>
 						</div>
-
-						<div class="test_content">
-							<div class="test_content_title">
-								<h2>单选题</h2>
-								<p>
-									<span>共</span><i class="content_lit">60</i><span>题，</span><span>合计</span><i
-										class="content_fs">60</i><span>分</span>
-								</p>
+						<c:if test="${nowExam.single_num!=0 }">
+							<div class="test_content">
+								<div class="test_content_title">
+									<h2>单选题</h2>
+									<p>
+										<span>共</span><i class="content_lit">${nowExam.single_num}</i><span>题，</span><span>合计</span><i
+											class="content_fs">${nowExam.single_num*nowExam.single_score}</i><span>分</span>
+									</p>
+								</div>
 							</div>
-						</div>
-						<div class="test_content_nr">
-							<ul>
+							<div class="test_content_nr">
+								<ul>
+									<c:forEach items="${singleList}" var="que" varStatus="status">
+										<li id="qu_0_${status.index }">
+											<div class="test_content_nr_tt">
+												<i>${status.count}</i><span>(${nowExam.single_score}分)</span><font>${que.question_content }</font><b
+													class="icon iconfont">&#xe881;</b>
+											</div>
 
-								<li id="qu_0_0">
-									<div class="test_content_nr_tt">
-										<i>1</i><span>(1分)</span><font>在生产管理信息系统中，下列操作步骤能正确将工单推进流程的是（
-											）</font><b class="icon iconfont">&#xe881;</b>
-									</div>
+											<div class="test_content_nr_main">
+												<ul>
+													<c:set var="string1" value="${ que.question_item}" />
+													<c:set var="stringA" value="${fn:split(string1, ' ')}" />
+													<li class="option"><label
+														for="0_answer_${status.count}_option_1"><input
+															type="radio" class="radioOrCheck"
+															name="single${status.count}"
+															id="0_answer_${status.count}_option_1" value="a" /> A.
+															<p class="ue" style="display: inline;">${stringA[0]}</p>
+													</label></li>
 
-									<div class="test_content_nr_main">
-										<ul>
+													<li class="option"><label
+														for="0_answer_${status.count}_option_2"><input
+															type="radio" class="radioOrCheck"
+															name="single${status.count}"
+															id="0_answer_${status.count}_option_2" value="b" /> B.
+															<p class="ue" style="display: inline;">${stringA[1]}</p>
+													</label></li>
 
-											<li class="option"><input type="radio"
-												class="radioOrCheck" name="answer1" id="0_answer_1_option_1" />
+													<li class="option"><label
+														for="0_answer_${status.count}_option_3"><input
+															type="radio" class="radioOrCheck"
+															name="single${status.count}"
+															id="0_answer_${status.count}_option_3" value="c" /> C.
+															<p class="ue" style="display: inline;">${stringA[2]}</p>
+													</label></li>
 
-
-												<label for="0_answer_1_option_1"> A.
-													<p class="ue" style="display: inline;">在工具栏中点击“workflow”标签</p>
-											</label></li>
-
-											<li class="option"><input type="radio"
-												class="radioOrCheck" name="answer1" id="0_answer_1_option_2" />
-
-
-												<label for="0_answer_1_option_2"> B.
-													<p class="ue" style="display: inline;">在缺陷单界面中点击“推进流程”按钮</p>
-											</label></li>
-
-											<li class="option"><input type="radio"
-												class="radioOrCheck" name="answer1" id="0_answer_1_option_3" />
-
-
-												<label for="0_answer_1_option_3"> C.
-													<p class="ue" style="display: inline;">在缺陷单界面中点击“提交”按钮</p>
-											</label></li>
-
-											<li class="option"><input type="radio"
-												class="radioOrCheck" name="answer1" id="0_answer_1_option_4" />
-
-
-												<label for="0_answer_1_option_4"> D.
-													<p class="ue" style="display: inline;">后台启动流程推进</p>
-											</label></li>
-
-										</ul>
-									</div>
-								</li>
-
-								<li id="qu_0_1">
-									<div class="test_content_nr_tt">
-										<i>2</i><span>(1分)</span><font>在营销系统中查询客户有无欠费、余额及抄表数据接待客户时应做到哪些最基本的礼仪？</font><b
-											class="icon iconfont">&#xe881;</b>
-									</div>
-
-									<div class="test_content_nr_main">
-										<ul>
-
-											<li class="option"><input type="radio"
-												class="radioOrCheck" name="answer2" id="0_answer_2_option_1" />
-
-
-												<label for="0_answer_2_option_1"> A.
-													<p class="ue" style="display: inline;">起身、微笑、示坐、问候客户</p>
-											</label></li>
-
-											<li class="option"><input type="radio"
-												class="radioOrCheck" name="answer2" id="0_answer_2_option_2" />
-
-
-												<label for="0_answer_2_option_2"> B.
-													<p class="ue" style="display: inline;">坐着，问候客户</p>
-											</label></li>
-
-											<li class="option"><input type="radio"
-												class="radioOrCheck" name="answer2" id="0_answer_2_option_3" />
-
-
-												<label for="0_answer_2_option_3"> C.
-													<p class="ue" style="display: inline;">坐着，问候客户</p>
-											</label></li>
-
-											<li class="option"><input type="radio"
-												class="radioOrCheck" name="answer2" id="0_answer_2_option_4" />
-
-
-												<label for="0_answer_2_option_4"> D.
-													<p class="ue" style="display: inline;">请问需要办理什么业务</p>
-											</label></li>
-
-										</ul>
-									</div>
-								</li>
-
-							</ul>
-						</div>
-
-						<div class="test_content">
-							<div class="test_content_title">
-								<h2>多选题</h2>
-								<p>
-									<span>共</span><i class="content_lit">30</i><span>题，</span><span>合计</span><i
-										class="content_fs">30</i><span>分</span>
-								</p>
+													<li class="option"><label
+														for="0_answer_${status.count}_option_4"><input
+															type="radio" class="radioOrCheck"
+															name="single${status.count}"
+															id="0_answer_${status.count}_option_4" value="d" /> D.
+															<p class="ue" style="display: inline;">${stringA[3]}</p>
+													</label></li>
+												</ul>
+											</div>
+										</li>
+									</c:forEach>
+								</ul>
 							</div>
-						</div>
-						<div class="test_content_nr">
-							<ul>
+						</c:if>
+						<c:if test="${nowExam.mulit_num!=0 }">
+							<div class="test_content">
+								<div class="test_content_title">
+									<h2>多选题</h2>
+									<p>
+										<span>共</span><i class="content_lit">${nowExam.mulit_num}</i><span>题，</span><span>合计</span><i
+											class="content_fs">${nowExam.mulit_num*nowExam.mulit_score}</i><span>分</span>
+									</p>
+								</div>
+							</div>
+							<div class="test_content_nr">
+								<ul>
+									<ul>
+										<c:forEach items="${mulitList}" var="que" varStatus="status">
+											<li id="qu_1_${status.index }">
+												<div class="test_content_nr_tt">
+													<i>${status.count}</i><span>(${nowExam.mulit_score}分)</span><font>${que.question_content }</font><b
+														class="icon iconfont">&#xe881;</b>
+												</div>
 
-								<li id="qu_1_0">
-									<div class="test_content_nr_tt">
-										<i>1</i><span>(1分)</span><font>以下属于南方电网员工职业操守中明文规定的有()</font><b
-											class="icon iconfont">&#xe881;</b>
-									</div>
+												<div class="test_content_nr_main">
+													<ul>
+														<c:set var="string1" value="${ que.question_item}" />
+														<c:set var="stringA" value="${fn:split(string1, ' ')}" />
+														<li class="option"><label
+															for="1_answer_${status.count}_option_1"><input
+																type="checkbox" class="radioOrCheck"
+																name="mulit${status.count}" value="a"
+																id="1_answer_${status.count}_option_1" /> A.
+																<p class="ue" style="display: inline;">${stringA[0]}</p>
+														</label></li>
 
-									<div class="test_content_nr_main">
-										<ul>
+														<li class="option"><label
+															for="1_answer_${status.count}_option_2"
+															<input type="checkbox"
+														class="radioOrCheck" name="mulit${status.count}" value="b"
+														id="1_answer_${status.count}_option_2" />>
+																B.
+																<p class="ue" style="display: inline;">${stringA[1]}</p>
+														</label></li>
 
-											<li class="option"><input type="checkbox"
-												class="radioOrCheck" name="answer1" id="1_answer_1_option_1" />
+														<li class="option"><label
+															for="1_answer_${status.count}_option_3"><input
+																type="checkbox" class="radioOrCheck"
+																name="mulit${status.count}" value="c"
+																id="1_answer_${status.count}_option_3" /> C.
+																<p class="ue" style="display: inline;">${stringA[2]}</p>
+														</label></li>
 
-												<label for="1_answer_1_option_1"> A.
-													<p class="ue" style="display: inline;">热爱祖国、热爱南网、热爱岗位</p>
-											</label></li>
+														<li class="option"><label
+															for="1_answer_${status.count}_option_4"><input
+																type="checkbox" class="radioOrCheck"
+																name="mulit${status.count}" value="d"
+																id="1_answer_${status.count}_option_4" /> D.
+																<p class="ue" style="display: inline;">${stringA[3]}</p>
+														</label></li>
+													</ul>
+												</div>
+											</li>
+										</c:forEach>
+									</ul>
+							</div>
+						</c:if>
 
-											<li class="option"><input type="checkbox"
-												class="radioOrCheck" name="answer1" id="1_answer_1_option_2" />
+						<c:if test="${nowExam.torf_num!=0}">
+							<div class="test_content">
+								<div class="test_content_title">
+									<h2>判断题</h2>
+									<p>
+										<span>共</span><i class="content_lit">${nowExam.torf_num}</i><span>题，</span><span>合计</span><i
+											class="content_fs">${nowtorf.single_num*nowExam.torf_score}</i><span>分</span>
+									</p>
+								</div>
+							</div>
+							<div class="test_content_nr">
+								<ul>
+									<c:forEach items="${torfList}" var="que" varStatus="status">
+										<li id="qu_3_${status.index }">
+											<div class="test_content_nr_tt">
+												<i>${status.count}</i><span>(${nowExam.torf_score}分)</span><font>${que.question_content }</font><b
+													class="icon iconfont">&#xe881;</b>
+											</div>
 
-												<label for="1_answer_1_option_2"> B.
-													<p class="ue" style="display: inline;">遵纪守法、忠于职守、令行禁止</p>
-											</label></li>
-
-											<li class="option"><input type="checkbox"
-												class="radioOrCheck" name="answer1" id="1_answer_1_option_3" />
-
-												<label for="1_answer_1_option_3"> C.
-													<p class="ue" style="display: inline;">客户至上、诚实守信、优质服务</p>
-											</label></li>
-
-											<li class="option"><input type="checkbox"
-												class="radioOrCheck" name="answer1" id="1_answer_1_option_4" />
-
-												<label for="1_answer_1_option_4"> D.
-													<p class="ue" style="display: inline;">公平竞争、互相监督、服从监管</p>
-											</label></li>
-
-										</ul>
-									</div>
-								</li>
-
-								<li id="qu_1_1">
-									<div class="test_content_nr_tt">
-										<i>2</i><span>(1分)</span><font>以下属于南方电网员工职业禁区的有()</font><b
-											class="icon iconfont">&#xe881;</b>
-									</div>
-
-									<div class="test_content_nr_main">
-										<ul>
-
-											<li class="option"><input type="checkbox"
-												class="radioOrCheck" name="answer2" id="1_answer_2_option_1" />
-
-												<label for="1_answer_2_option_1"> A.
-													<p class="ue" style="display: inline;">严禁违反人文道德</p>
-											</label></li>
-
-											<li class="option"><input type="checkbox"
-												class="radioOrCheck" name="answer2" id="1_answer_2_option_2" />
-
-												<label for="1_answer_2_option_2"> B.
-													<p class="ue" style="display: inline;">严禁违反安全规定</p>
-											</label></li>
-
-											<li class="option"><input type="checkbox"
-												class="radioOrCheck" name="answer2" id="1_answer_2_option_3" />
-
-												<label for="1_answer_2_option_3"> C.
-													<p class="ue" style="display: inline;">严禁违背行风规定</p>
-											</label></li>
-
-											<li class="option"><input type="checkbox"
-												class="radioOrCheck" name="answer2" id="1_answer_2_option_4" />
-
-												<label for="1_answer_2_option_4"> D.
-													<p class="ue" style="display: inline;">严禁违反财经纪律</p>
-											</label></li>
-
-										</ul>
-									</div>
-								</li>
-
-							</ul>
-						</div>
-
+											<div class="test_content_nr_main">
+												<ul>
+													<li class="option"><label
+														for="3_answer_${status.count}_option_1"> <input
+															type="radio" class="radioOrCheck"
+															name="torf${status.count}" value="a"
+															id="3_answer_${status.count}_option_1" />
+															<p class="ue" style="display: inline;" value="A">是</p>
+													</label></li>
+													<li class="option"><label
+														for="3_answer_${status.count}_option_2"> <input
+															type="radio" class="radioOrCheck"
+															name="torf${status.count}" value="b"
+															id="3_answer_${status.count}_option_2" />
+															<p class="ue" style="display: inline;" value="B">否</p>
+													</label></li>
+												</ul>
+											</div>
+										</li>
+									</c:forEach>
+								</ul>
+							</div>
+						</c:if>
 					</form>
 				</div>
-
 			</div>
 			<div class="nr_right">
 				<div class="nr_rt_main">
 					<div class="rt_nr1">
 						<div class="rt_nr1_title">
-							<h1>
-								<i class="icon iconfont">&#xe692;</i>答题卡
-							</h1>
+							<h1>答题卡</h1>
 							<p class="test_time">
-								<i class="icon iconfont">&#xe6fb;</i><b class="alt-1">01:40</b>
+								<b class="alt-1"></b>
 							</p>
 						</div>
-
 						<div class="rt_content">
-							<div class="rt_content_tt">
-								<h2>单选题</h2>
-								<p>
-									<span>共</span><i class="content_lit">60</i><span>题</span>
-								</p>
-							</div>
-							<div class="rt_content_nr answerSheet">
-								<ul>
-
-									<li><a href="#qu_0_0">1</a></li>
-
-									<li><a href="#qu_0_1">2</a></li>
-
-									<li><a href="#qu_0_2">3</a></li>
-
-									<li><a href="#qu_0_3">4</a></li>
-
-									<li><a href="#qu_0_4">5</a></li>
-
-									<li><a href="#qu_0_5">6</a></li>
-
-									<li><a href="#qu_0_6">7</a></li>
-
-								</ul>
-							</div>
+							<c:if test="${nowExam.single_num!=0 }">
+								<div class="rt_content_tt">
+									<h2>单选题</h2>
+									<p>
+										<span>共</span><i class="content_lit">${nowExam.single_num }</i><span>题</span>
+									</p>
+								</div>
+								<div class="rt_content_nr answerSheet">
+									<ul>
+										<c:forEach var="x" begin="0" end="${nowExam.single_num -1}">
+											<li><a href="#qu_0_${x}">${x+1}</a></li>
+										</c:forEach>
+									</ul>
+								</div>
 						</div>
-
-						<div class="rt_content">
-							<div class="rt_content_tt">
-								<h2>多选题</h2>
-								<p>
-									<span>共</span><i class="content_lit">30</i><span>题</span>
-								</p>
+						</c:if>
+						<c:if test="${nowExam.mulit_num!=0 }">
+							<div class="rt_content">
+								<div class="rt_content_tt">
+									<h2>多选题</h2>
+									<p>
+										<span>共</span><i class="content_lit">${nowExam.mulit_num }</i><span>题</span>
+									</p>
+								</div>
+								<div class="rt_content_nr answerSheet">
+									<ul>
+										<c:forEach var="x" begin="0" end="${nowExam.mulit_num -1}">
+											<li><a href="#qu_1_${x}">${x+1}</a></li>
+										</c:forEach>
+									</ul>
+								</div>
 							</div>
-							<div class="rt_content_nr answerSheet">
-								<ul>
-
-									<li><a href="#qu_1_0">1</a></li>
-
-									<li><a href="#qu_1_1">2</a></li>
-
-									<li><a href="#qu_1_2">3</a></li>
-
-									<li><a href="#qu_1_3">4</a></li>
-
-									<li><a href="#qu_1_4">5</a></li>
-
-									<li><a href="#qu_1_5">6</a></li>
-
-									<li><a href="#qu_1_6">7</a></li>
-
-									<li><a href="#qu_1_7">8</a></li>
-
-
-
-								</ul>
+						</c:if>
+						<c:if test="${nowExam.torf_num!=0 }">
+							<div class="rt_content">
+								<div class="rt_content_tt">
+									<h2>判断题</h2>
+									<p>
+										<span>共</span><i class="content_lit">${nowExam.torf_num }</i><span>题</span>
+									</p>
+								</div>
+								<div class="rt_content_nr answerSheet">
+									<ul>
+										<c:forEach var="x" begin="0" end="${nowExam.torf_num -1}">
+											<li><a href="#qu_3_${x}">${x+1}</a></li>
+										</c:forEach>
+									</ul>
+								</div>
 							</div>
-						</div>
+						</c:if>
 
 					</div>
 
@@ -325,39 +285,24 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="foot"></div>
 	</div>
 
-	<script src="../Resource/js/layui.js" charset="utf-8"></script>
-	<script src="../Resource/js/jquery.min.js"></script>
-	<script src="../Resource/js/jquery.easy-pie-chart.js"></script>
-	<!--时间js-->
-	<script src="../Resource/js/time/jquery.countdown.js"></script>
+	<script src="./Resource/js/layui.js" charset="utf-8"></script>
+	<script src="./Resource/js/jquery.min.js"></script>
+	<script src="./Resource/js/jquery.easy-pie-chart.js"></script>
+	<script src="./Resource/js/exampaper.js"></script>
 	<script>
-		window.jQuery(function($) {
-			"use strict";
-			
-			$('time').countDown({
-				with_separators : false
-			});
-			$('.alt-1').countDown({
-				css_class : 'countdown-alt-1'
-			});
-			$('.alt-2').countDown({
-				css_class : 'countdown-alt-2'
-			});
-			
-		});
-		
-		
-		$(function() {
-			$('li.option label').click(function() {
-			debugger;
-				var examId = $(this).closest('.test_content_nr_main').closest('li').attr('id'); // 得到题目ID
-				var cardLi = $('a[href=#' + examId + ']'); // 根据题目ID找到对应答题卡
-				// 设置已答题
-				if(!cardLi.hasClass('hasBeenAnswer')){
-					cardLi.addClass('hasBeenAnswer');
-				}
-				
-			});
+	// 倒计时
+	layui.use('util', function(){
+		  var util = layui.util;
+		  
+		  var serverTime = new Date(${year},${month},${sday},${shour},${sminute},${ssecond}).getTime();// 假设为当前服务器时间，这里采用的是本地时间，实际使用一般是取服务端的
+		  var endTime = new Date(${year},${month},${eday},${ehour},${eminute},${esecond}).getTime() // 假设为结束日期
+		  
+		  util.countdown(endTime, serverTime, function(date, serverTime, timer){
+		    var str = date[1] + '时' +  date[2] + '分' + date[3] + '秒';
+		    layui.$('.alt-1').html(''+ str);
+		    if(date[1]==0&&date[2]==0&&date[3]==0)
+		    	test();
+		  });
 		});
 	</script>
 </body>

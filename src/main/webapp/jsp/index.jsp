@@ -2,7 +2,7 @@
 	pageEncoding="utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
 <head>
 <jsp:include page="head.jsp"></jsp:include>
@@ -165,12 +165,14 @@
 							班级： <span>${student.student_class}</span>
 						</p>
 						<p>
-						  待完成考试：</br><span style="padding-left:30px;style="color:#fb2525;"">${examInfo.exam_name }</span>
+							待完成考试：</br>
+							<span style="padding-left: 30px;style="color:#fb2525;"">${examInfo.exam_name }</span>
 						</p>
-						
+
 					</blockquote>
 				</div>
-				<button id="startExam" class="layui-btn layui-btn-lg layui-btn-radius">进入考试</button>
+				<button id="startExam"
+					class="layui-btn layui-btn-lg layui-btn-radius">进入考试</button>
 			</div>
 
 		</div>
@@ -183,27 +185,43 @@
 		<p>版权所有 西北农林科技大学 Copy © NORTHWEST A&amp;F UNIVERSITY All RIGHTS
 			RESERVED</p>
 	</div>
-<script>
-    var examId = ${examInfo.exam_id}; 
-    $("#startExam").click(function(){
-    	$.ajax({
-    		url : 'startExam.do',
-			method : 'post',
-			data : {
-				examId :examId;
-			},
-			dataType : 'JSON',
-			success : function(res) {
-				
-			},
-			error : function(data) {
-				layer.msg('出了点错误，正在修！', {
-					time : 500
+	<script src="./Resource/js/jquery.min.js" charset="utf-8"></script>
+	<script src="./Resource/js/layui.js" charset="utf-8"></script>
+	<script>
+		layui.use([ 'layer' ], function() {
+			var layer = layui.layer;
+
+			var errMsg = '${errMsg}';
+			if (errMsg != null && errMsg != '')
+				layer.msg(errMsg, {
+					time : 2500
 				});
-			}
-    	});
-    	
-    };)
-</script>
+			else
+				;
+
+			var exam_id = '${examInfo.exam_id}';
+			$("#startExam").click(function() {
+				if (exam_id == '') {
+					layer.msg("太棒了！你没有考试", {
+						time : 2500
+					});
+				} else {
+					var form = $("<form method='post'></form>");
+					form.attr({
+						"action" : "/labsafety/startExam.do"
+					});
+					var input = $("<input type='hidden'>");
+					input.attr({
+						"name" : "examId"
+					});
+					input.val(exam_id);
+					form.append(input);
+					$("html").append(form);
+					form.submit();
+				}
+			});
+
+		})
+	</script>
 </body>
 </html>

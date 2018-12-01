@@ -1,5 +1,6 @@
 package com.ssm.controller;
 
+import java.awt.print.Paper;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -8,6 +9,7 @@ import java.io.InputStream;
 import java.net.Inet4Address;
 import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -17,18 +19,23 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.http.impl.EnglishReasonPhraseCatalog;
+import org.apache.http.protocol.HTTP;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.ModelAndViewDefiningException;
 import org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor;
 
+import com.alibaba.druid.stat.TableStat.Mode;
 import com.ssm.pojo.Exam;
 import com.ssm.pojo.FileRule;
 import com.ssm.pojo.FileType;
 import com.ssm.pojo.LearningFile;
+import com.ssm.pojo.Question;
 import com.ssm.pojo.Regulation;
 import com.ssm.pojo.Student;
 import com.ssm.pojo.SystemNotice;
@@ -45,15 +52,22 @@ public class IndexController {
 	private LearnService learnService;
 
 	private ModelAndView ERROR_PAGE = new ModelAndView("error");
-
+	private ModelAndView LOGIN = new ModelAndView("login");
+	private ModelAndView INDEX = new ModelAndView("index");
 	
+	private boolean ifLogin(HttpServletRequest request) {
+		//登陆检查
+				if(request.getSession().getAttribute("student")==null)
+					return true;
+				else return false;
+				
+				
+	}
 	@RequestMapping("getIndex.do")
 	public ModelAndView getIndex(HttpServletRequest request, HttpServletResponse response) {
 		
-		//登陆检查
-		if(request.getSession().getAttribute("student")==null) { ModelAndView
-		 mav = new ModelAndView("login"); return mav; 
-		 }
+	   if(ifLogin(request))
+			return LOGIN;
 		
 		ModelAndView mav = new ModelAndView("index");
 		// 获取无内容规章制度名列表
@@ -177,17 +191,80 @@ public class IndexController {
 		}
 		out.close();
 	}
-    @RequestMapping("startExam.do")
-    @ResponseBody
-    private int ifTimeStartExam(int examId) {
+	@RequestMapping("startExam.do")
+    private ModelAndView  ifTimeStartExam(int examId) {
+		ModelAndView indexMav = new ModelAndView("redirect:/getIndex.do");
+		ModelAndView noteMav =new ModelAndView("forward:/getExamNote.do");
     	Date now = new Date();
     	Exam exam = indexService.findExamById(examId);
     	if(now.before(exam.getExam_begin_time()))
-    		return -1;
-		return 0;
-    	
+    		indexMav.addObject("errMsg", "考试还未开始");
+    	else if(now.after(exam.getExam_finish_time()))
+            indexMav.addObject("errMsg","考试已经结束");
+    	else {
+    		return noteMav;
+    	}    		
+    	return indexMav;
     }
-	
+    
+	@RequestMapping("getExamNote.do")
+	private ModelAndView getExamNote(HttpServletRequest request,int examId) {
+		//登陆检查
+		if(ifLogin(request))
+				return LOGIN;
+		if(examId==0)
+			return INDEX;
+		
+		ModelAndView noteMav = new ModelAndView("/exam/examNote");
+		noteMav.addObject("examId",examId);
+		return noteMav;
+	}
+	@RequestMapping("getTestPaper.do")
+	private ModelAndView getTestPaper(HttpServletRequest request,int examId) {
+		//登陆检查
+		if(ifLogin(request))
+			return LOGIN;
+		if(examId==0)
+			return INDEX;
+		
+		ModelAndView paperMav= new ModelAndView("/exam/exam");
+		int singleQue=1,mulitQue=2,torfQue=3;
+		List<Question> singleList = indexService.getQuestionOfPaper(examId,singleQue);
+		List<Question> mulitList = indexService.getQuestionOfPaper(examId,mulitQue);
+		List<Question> torfList = indexService.getQuestionOfPaper(examId,torfQue);
+		Exam nowExam  = indexService.findExamById(examId);
+		
+		Calendar stime = Calendar.getInstance(),etime = Calendar.getInstance();
+		stime.setTime(new Date());
+		etime.setTime(nowExam.getExam_finish_time());
+		
+		int year = stime.get(Calendar.YEAR);
+		int month = stime.get(Calendar.MONTH)+1;
+		int sday = stime.get(Calendar.DAY_OF_MONTH);
+		int eday = etime.get(Calendar.DAY_OF_MONTH);
+		int shour = stime.get(Calendar.HOUR_OF_DAY);
+		int ehour = etime.get(Calendar.HOUR_OF_DAY);
+		int sminute = stime.get(Calendar.MINUTE);
+		int eminute = etime.get(Calendar.MINUTE);
+		int ssecond = stime.get(Calendar.SECOND);
+		int esecond = etime.get(Calendar.SECOND);
+		
+		paperMav.addObject("year",year);
+		paperMav.addObject("month",month);
+		paperMav.addObject("sday",sday);
+		paperMav.addObject("eday",eday);
+		paperMav.addObject("shour",shour);
+		paperMav.addObject("ehour",ehour);
+		paperMav.addObject("sminute",sminute);
+		paperMav.addObject("eminute",eminute);
+		paperMav.addObject("ssecond",ssecond);
+		paperMav.addObject("esecond",esecond);
+		paperMav.addObject("singleList",singleList);
+		paperMav.addObject("mulitList",mulitList);
+		paperMav.addObject("torfList",torfList);
+		paperMav.addObject("nowExam",nowExam);
+		return paperMav;
+	}
 	// 获取在线学习的文章类型列表
 	public List<FileType> getFileTypeList() {
 		return indexService.getFileTypeList();

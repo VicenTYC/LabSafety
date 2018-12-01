@@ -59,5 +59,9 @@ public class IndexServiceImpl implements IndexService {
 		return indexMapper.findExamById(examId);
 	}
 
+	public List<Question> getQuestionOfPaper(int examId, int quesType) {
+		return indexMapper.getQuestionOfPaper(examId,quesType);
+	}
+
 
 }

@@ -10,6 +10,7 @@ import com.ssm.pojo.Exam;
 import com.ssm.pojo.FileRule;
 import com.ssm.pojo.FileType;
 import com.ssm.pojo.LearningFile;
+import com.ssm.pojo.Question;
 import com.ssm.pojo.Regulation;
 import com.ssm.pojo.SystemNotice;
 
@@ -34,6 +35,8 @@ public interface IndexMapper {
 
 	Exam findExam(@Param("date")String date, @Param("college")String student_college, @Param("major")String student_major);
 
-	Exam findExamById(@Param("exam")int examId);
+	Exam findExamById(@Param("examId")int examId);
+
+	List<Question> getQuestionOfPaper(@Param("examId")int examId, @Param("quesType")int quesType);
    
 }

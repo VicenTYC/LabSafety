@@ -68,7 +68,12 @@
 		where college = #{college} and ( major = #{major} or major = "全部专业" )
 		<if test="date !=null and date !=''">      
        <![CDATA[
-             and   exam_begin_time >=  DATE_FORMAT(#{date}, '%Y-%m-%d %h:%s')
+             and   exam_begin_time >= DATE_FORMAT(#{date}, '%Y-%m-%d %h:%s')
+             or(
+                 exam_begin_time <= DATE_FORMAT(#{date}, '%Y-%m-%d %h:%s')
+                 and 
+                  exam_finish_time >= DATE_FORMAT(#{date}, '%Y-%m-%d %h:%s')
+             )
                 ]]>
 		</if>
 	</select>
@@ -77,6 +82,12 @@
 	 	select *
 	 	from exam
 	 	where exam_id = #{examId};
+	</select>
+	
+	<select id="getQuestionOfPaper" parameterType="int" resultType="com.ssm.pojo.Question">
+	    select *
+	    from exam_question
+	    where exam_id = #{examId} and question_type = #{quesType}
 	</select>
 
 </mapper> 
