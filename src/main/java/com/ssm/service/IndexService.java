@@ -28,4 +28,6 @@ public interface IndexService {
 
 	List<Question> getQuestionOfPaper(int examId, int quesType);
 
+	int addStudentScore(int examId, String student_id, int right, String wrongQuestion, String string, String string2,String student_name);
+
 }

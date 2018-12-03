@@ -88,4 +88,15 @@
           from exam
           where exam_id=#{examId}
      </delete>
+     <delete id="deleteExamQuestion" parameterType="int">
+          delete
+          from exam_question
+          where exam_id=#{examId}
+     </delete>
+     <select id="getScoreList" parameterType="int" resultType="com.ssm.pojo.StudentScore">
+         select *
+         from student_score
+         where exam_id= #{examId}
+         limit #{start},#{limit}
+     </select>
  </mapper> 

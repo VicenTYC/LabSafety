@@ -9,6 +9,7 @@ import com.ssm.pojo.BankType;
 import com.ssm.pojo.Exam;
 import com.ssm.pojo.ExamQuestion;
 import com.ssm.pojo.Question;
+import com.ssm.pojo.StudentScore;
 
 public interface  ExamMapper {
 
@@ -35,6 +36,10 @@ public interface  ExamMapper {
 	public int addExamQuestion(@Param("questions")List<ExamQuestion> questions);
 
 	public int deleteExamById(@Param("examId") int examId);
+
+	public int deleteExamQuestion(@Param("examId")int examId);
+
+	public List<StudentScore> getScoreList(@Param("start")int startClum,@Param("limit") int limit, @Param("examId")int examId);
 
 
 }

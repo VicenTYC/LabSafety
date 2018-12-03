@@ -1,36 +1,33 @@
 package com.ssm.controller;
 
-import java.awt.print.Paper;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
-import java.net.Inet4Address;
 import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
-import javax.ejb.FinderException;
-import javax.enterprise.inject.New;
+import javax.print.DocFlavor.STRING;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.http.impl.EnglishReasonPhraseCatalog;
-import org.apache.http.protocol.HTTP;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.ModelAndViewDefiningException;
-import org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor;
 
-import com.alibaba.druid.stat.TableStat.Mode;
+import com.alibaba.fastjson.JSONArray;
 import com.ssm.pojo.Exam;
 import com.ssm.pojo.FileRule;
 import com.ssm.pojo.FileType;
@@ -50,7 +47,12 @@ public class IndexController {
 	private IndexService indexService;
 	@Autowired
 	private LearnService learnService;
-
+    
+	Map<Integer,Map<String,String> > serverExam = new HashMap<>();
+	Map<String,String> studentAnswer ;
+    Map<Integer,Map<Integer,List<Question>>> examQuestionList = new HashMap<>();
+    Map<Integer,List<Question>> examQuestion ;
+	
 	private ModelAndView ERROR_PAGE = new ModelAndView("error");
 	private ModelAndView LOGIN = new ModelAndView("login");
 	private ModelAndView INDEX = new ModelAndView("index");
@@ -59,9 +61,7 @@ public class IndexController {
 		//登陆检查
 				if(request.getSession().getAttribute("student")==null)
 					return true;
-				else return false;
-				
-				
+				else return false;	
 	}
 	@RequestMapping("getIndex.do")
 	public ModelAndView getIndex(HttpServletRequest request, HttpServletResponse response) {
@@ -75,14 +75,13 @@ public class IndexController {
 		// List<FileRule> fileRuleList = indexService.getFileRule(0,5);
 		// 获取无内容系统公告
 		List<SystemNotice> systemNoticeList = indexService.getSystemNotice(0, 5);
-
 		List<FileType> fileTypeList = getFileTypeList();
 		List<String> questionBankTypeList = getQuestionBankTypeList();
 		Student student = (Student)request.getSession().getAttribute("student");
 		 SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");//设置日期格式
 		String date =  df.format(new Date());		
         Exam examInfo =  indexService.findExam(date,student.getStudent_college(),student.getStudent_major());
-        
+	
         mav.addObject("examInfo",examInfo);		
 		mav.addObject("fileTypeList", fileTypeList);
 		mav.addObject("questionBankTypeList", questionBankTypeList);
@@ -192,9 +191,11 @@ public class IndexController {
 		out.close();
 	}
 	@RequestMapping("startExam.do")
-    private ModelAndView  ifTimeStartExam(int examId) {
-		ModelAndView indexMav = new ModelAndView("redirect:/getIndex.do");
+    private ModelAndView  ifTimeStartExam(@RequestParam(defaultValue = "0")int examId) {
+		ModelAndView indexMav = new ModelAndView("forward:/getIndex.do");
 		ModelAndView noteMav =new ModelAndView("forward:/getExamNote.do");
+		if(examId==0)
+			return indexMav;
     	Date now = new Date();
     	Exam exam = indexService.findExamById(examId);
     	if(now.before(exam.getExam_begin_time()))
@@ -208,7 +209,7 @@ public class IndexController {
     }
     
 	@RequestMapping("getExamNote.do")
-	private ModelAndView getExamNote(HttpServletRequest request,int examId) {
+	private ModelAndView getExamNote(HttpServletRequest request,@RequestParam(defaultValue = "0")int examId) {
 		//登陆检查
 		if(ifLogin(request))
 				return LOGIN;
@@ -220,7 +221,7 @@ public class IndexController {
 		return noteMav;
 	}
 	@RequestMapping("getTestPaper.do")
-	private ModelAndView getTestPaper(HttpServletRequest request,int examId) {
+	private ModelAndView getTestPaper(HttpServletRequest request,@RequestParam(defaultValue = "0")int examId) {
 		//登陆检查
 		if(ifLogin(request))
 			return LOGIN;
@@ -228,15 +229,36 @@ public class IndexController {
 			return INDEX;
 		
 		ModelAndView paperMav= new ModelAndView("/exam/exam");
+		//检查是否是中断考试需要恢复
+		Student student = (Student)request.getSession().getAttribute("student");
+		if(serverExam.containsKey(examId)&&serverExam.get(examId).containsKey(student.getStudent_id())) {
+			String answer = serverExam.get(examId).get(student.getStudent_id());
+			System.out.println(answer);
+			paperMav.addObject("answer",answer);			
+		}
+		//检查是否是第一次抽题
 		int singleQue=1,mulitQue=2,torfQue=3;
-		List<Question> singleList = indexService.getQuestionOfPaper(examId,singleQue);
-		List<Question> mulitList = indexService.getQuestionOfPaper(examId,mulitQue);
-		List<Question> torfList = indexService.getQuestionOfPaper(examId,torfQue);
+		List<Question> mulitList,torfList,singleList;
+		Map<Integer,List<Question>> examQuestion =new HashMap<Integer,List<Question>>();
+		if(examQuestionList.containsKey(examId)) {
+			 singleList =  examQuestionList.get(examId).get(1);
+			 mulitList = examQuestionList.get(examId).get(2);
+			 torfList = examQuestionList.get(examId).get(3);
+		}
+		else {
+		 singleList = indexService.getQuestionOfPaper(examId,singleQue);
+		 mulitList = indexService.getQuestionOfPaper(examId,mulitQue);
+		 torfList = indexService.getQuestionOfPaper(examId,torfQue);
+		 examQuestion.put(1, singleList);
+		 examQuestion.put(2, mulitList);
+		 examQuestion.put(3, torfList);
+		 examQuestionList.put(examId, examQuestion);
+		}
 		Exam nowExam  = indexService.findExamById(examId);
 		
 		Calendar stime = Calendar.getInstance(),etime = Calendar.getInstance();
 		stime.setTime(new Date());
-		etime.setTime(nowExam.getExam_finish_time());
+		etime.setTime(nowExam.getExam_finish_time());	
 		
 		int year = stime.get(Calendar.YEAR);
 		int month = stime.get(Calendar.MONTH)+1;
@@ -264,6 +286,121 @@ public class IndexController {
 		paperMav.addObject("torfList",torfList);
 		paperMav.addObject("nowExam",nowExam);
 		return paperMav;
+	}
+	//缓存答题过程中间答案
+	@RequestMapping("answerCache.do")
+	@ResponseBody
+	private int saveMidAnswer(String answer,int examId,HttpServletRequest request) {
+		int status = 0;
+		Student student = (Student)request.getSession().getAttribute("student");
+		String studentId = student.getStudent_id();
+		if(!serverExam.containsKey(examId))
+		{
+			studentAnswer = new HashMap<String, String>();
+			studentAnswer.put(studentId, answer);
+			serverExam.put(examId, studentAnswer);
+		}
+		else
+			serverExam.get(examId).put(studentId, answer);
+		return status;	
+	}
+	@RequestMapping("submitPaper.do")
+	@ResponseBody
+	private int submitPaper(HttpServletRequest request,int examId) {
+		//从前端获取json对象answer
+		String answers  = request.getParameter("answer");
+		JSONObject jsonObj = new JSONObject(answers);
+		Map<String,Object> map = jsonObj.toMap();
+		
+/*		answers = answers.replace("{","").replace("}", "");
+		String answerList[] = answers.split(",");*/
+		
+		int singleQue=1,mulitQue=2,torfQue=3, status=0;
+		int right=0;
+		Student student = (Student)request.getSession().getAttribute("student");
+		
+		//String[] answerList = answer.split("&");
+		List<Question> mulitList,torfList,singleList;
+		singleList =  examQuestionList.get(examId).get(1);
+		mulitList = examQuestionList.get(examId).get(2);
+		torfList = examQuestionList.get(examId).get(3);	
+		int count = singleList.size()+mulitList.size()+torfList.size();
+		Exam nowExam  = indexService.findExamById(examId);
+		
+		int i=0,j=0,m=0;
+		String wrongQuestion="";
+		//获取每题的分数
+		int singleScore = nowExam.getSingle_score();
+		int mulitScore = nowExam.getMulit_score();
+		int torfScore = nowExam.getTorf_score();	
+		//自动判题
+		Iterator iter = map.entrySet().iterator();
+		while(iter.hasNext()) {			
+			Map.Entry entry = (Map.Entry) iter.next();
+			String key = (String)entry.getKey();
+			Object val = entry.getValue();
+			
+			if(key.startsWith("single")) {
+				String value = (String)val;
+				if(value!=""&&value.equals(singleList.get(i).getQuestion_answer())) {
+					right+=singleScore;					
+				}
+				else{
+					wrongQuestion+=" "+singleList.get(i).getQuestion_id();					
+				}
+				i++;
+			}
+			if(key.startsWith("mulit")) {
+				String str;
+				if(!val.equals("")) {
+					ArrayList<String> value = (ArrayList<String>)val;
+						str = value.toString().replace(",", "").replace("[", "").replace("]", "").replace("  ", " ").trim();
+						
+				}
+				else
+				   str = (String) val;
+				
+				if(str!=""&&str.equals(mulitList.get(j).getQuestion_answer())) {
+					right+=mulitScore;					
+				}
+				else{
+					wrongQuestion+=" "+mulitList.get(j).getQuestion_id();
+					
+				}
+				j++;
+			}
+			if(key.startsWith("torf")) {
+				String value = (String)val;
+				if(value!=""&&value.equals(torfList.get(m).getQuestion_answer())) {
+					right+=torfScore;
+					
+				}
+				else{
+					wrongQuestion+=" "+torfList.get(m).getQuestion_id();
+				}
+				m++;
+			}
+		}	
+		int res = indexService.addStudentScore(examId,student.getStudent_id(),right,wrongQuestion,student.getStudent_college(),student.getStudent_major(),student.getStudent_name());
+		if(res ==1) {
+			//提交成功则删除缓存的提交答案
+			//开考五分钟之内交卷，则无缓存答案
+			if(serverExam.containsKey(examId)) {
+				serverExam.get(examId).remove(student.getStudent_id());
+				if(serverExam.get(examId).isEmpty())
+					serverExam.remove(examId);
+			}
+			if(nowExam.getExam_finish_time().before(new Date())) {
+				examQuestionList.get(examId).remove(1);
+				examQuestionList.get(examId).remove(2);
+				examQuestionList.get(examId).remove(3);
+				examQuestionList.remove(examId);	
+			}		     
+		}
+		else {
+			status=1;
+		}
+		return status;
 	}
 	// 获取在线学习的文章类型列表
 	public List<FileType> getFileTypeList() {

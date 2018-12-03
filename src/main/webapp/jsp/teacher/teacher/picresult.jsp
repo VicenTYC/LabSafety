@@ -13,9 +13,6 @@
 			<div id="container2"
 				style="width: 500px; height: 400px; float: left;"></div>
 		</div>
-		
-		
-	
 	
 </div>
 

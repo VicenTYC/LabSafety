@@ -20,6 +20,7 @@
 	<context:component-scan base-package="com.ssm" />
 
 	<util:properties id="dbConfig" location="classpath:db.properties" />
+	
 	<!-- 创建连接池 -->
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="url" value="#{dbConfig.url}" />
@@ -30,14 +31,19 @@
 		<property name="maxActive" value="#{dbConfig.maxSize}" />
 	</bean>
 
+    <!-- spring和MyBatis完美整合，不需要mybatis的配置映射文件 -->
 	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="typeAliasesPackage" value="com.ssm.pojo" />
 		<property name="dataSource" ref="dataSource" />
+		<!-- 自动扫描mapping.xml文件 -->
 		<property name="mapperLocations" value="classpath:com/ssm/mapper/*.xml" />
 	</bean>
 
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.ssm.mapper" />
 	</bean>
+	<!--  ...end -->
+	
+	
 
 </beans>

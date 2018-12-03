@@ -38,5 +38,7 @@ public interface IndexMapper {
 	Exam findExamById(@Param("examId")int examId);
 
 	List<Question> getQuestionOfPaper(@Param("examId")int examId, @Param("quesType")int quesType);
+
+	int addStudentScore(@Param("examId")int examId, @Param("studentId")String studentId, @Param("right")int right, @Param("wrongQuestion")String wrongQuestion, String string, String string2,String student_name);
    
 }

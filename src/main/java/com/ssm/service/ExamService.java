@@ -6,6 +6,7 @@ import com.ssm.pojo.BankType;
 import com.ssm.pojo.Exam;
 import com.ssm.pojo.ExamQuestion;
 import com.ssm.pojo.Question;
+import com.ssm.pojo.StudentScore;
 
 public interface ExamService {
 
@@ -30,5 +31,9 @@ public interface ExamService {
 	int addExamQuestion(List<ExamQuestion> questions);
 
 	int deleteExamById(int examId);
+
+	List<StudentScore> getScoreList(int page, int limit, int examId);
+
+	int getScoreTotal(int examId);
 
 }

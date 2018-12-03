@@ -11,6 +11,7 @@ import com.ssm.pojo.BankType;
 import com.ssm.pojo.Exam;
 import com.ssm.pojo.ExamQuestion;
 import com.ssm.pojo.Question;
+import com.ssm.pojo.StudentScore;
 import com.ssm.service.ExamService;
 @Service(value="examServie")
 public class ExamServiceImpl implements ExamService {
@@ -76,7 +77,23 @@ public class ExamServiceImpl implements ExamService {
 
 
 	public int deleteExamById(int examId) {
-		return examMapper.deleteExamById(examId);
+		int status = 0;
+		if(examMapper.deleteExamQuestion(examId)>=1)
+			status = examMapper.deleteExamById(examId);
+		return status;
+	}
+
+
+	@Override
+	public List<StudentScore> getScoreList(int page, int limit, int examId) {
+		int starClum = (page-1)*limit;
+		return examMapper.getScoreList(starClum,limit,examId);
+	}
+
+
+	@Override
+	public int getScoreTotal(int examId) {
+		return 0;
 	}
 
 }

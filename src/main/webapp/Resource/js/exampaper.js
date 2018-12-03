@@ -9,7 +9,6 @@
 		}
 	}
 	function tiaozhuan(){
-		
 		setInterval(function(){
 				if(time>0){
 				settimes();
@@ -20,8 +19,8 @@
 	function test(){
 		layui.use('layer', function(){
 	
-		  var layer = layui.layer;
-		  layer.open({
+		 layer = layui.layer;
+		 layer.open({
 		        type: 1
 		        ,title: false // 不显示标题栏
 		        ,closeBtn: false
@@ -31,7 +30,7 @@
 		        ,btn: []
 		        ,btnAlign: 'c'
 		        ,moveType: 1 // 拖拽模式，0或者1
-		        ,content: '<div style="padding: 50px; line-height: 22px; background-color: #393D49; color: #fff; font-weight: 300;">考试以及结束请离开考场 ^_^</div>'
+		        ,content: '<div style="padding: 50px; line-height: 22px; background-color: #393D49; color: #fff; font-weight: 300;">考试已经结束请离开考场 ^_^</div>'
 		        ,success: function(layero){
 		        	tiaozhuan();
 		        }
@@ -39,9 +38,6 @@
 	});
 	
 	}
-	
-	
-	 
 		window.jQuery(function($) {
 			"use strict";
 
@@ -60,7 +56,7 @@
 		$(function() {
 			$('li.option label').click(
 					function() {
-						debugger;
+//						debugger;
 						var examId = $(this).closest('.test_content_nr_main')
 								.closest('li').attr('id'); // 得到题目ID
 						

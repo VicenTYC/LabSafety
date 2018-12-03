@@ -63,5 +63,9 @@ public class IndexServiceImpl implements IndexService {
 		return indexMapper.getQuestionOfPaper(examId,quesType);
 	}
 
+	public int addStudentScore(int examId, String student_id, int right, String wrongQuestion, String string, String string2,String student_name) {
+		return indexMapper.addStudentScore(examId,student_id,right,wrongQuestion,string,string2,student_name);
+	}
+
 
 }

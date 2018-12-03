@@ -14,16 +14,20 @@
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
 
 	<context:annotation-config />
-
+	
+	<!--扫描controller-->
 	<context:component-scan base-package="com.ssm">
 		<context:include-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
-
+	
+     <!-- 添加注解驱动  使用注解标注的类生效-->
 	<mvc:annotation-driven />
-
+	
+	<!-- 设置能访问静态资源 -->
 	<mvc:default-servlet-handler />
 
+   <!-- jsp page related... start -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="viewClass"
@@ -31,6 +35,7 @@
 		<property name="prefix" value="/jsp/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
+    <!-- jsp page related... end -->
 
 
 	<!-- 文件上传 start 配置文件上传，如果没有使用文件上传可以不用配置，当然如果不配，那么配置文件中也不必引入上传组件包 -->

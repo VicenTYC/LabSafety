@@ -89,5 +89,12 @@
 	    from exam_question
 	    where exam_id = #{examId} and question_type = #{quesType}
 	</select>
-
+    <insert id="addStudentScore">
+       insert into
+        student_score
+       (exam_id,student_id,score,wrong_question,student_college,student_major,student_name)
+       values
+       (#{param1},#{param2},#{param3},#{param4},#{param5},#{param6},#{parame7})
+       
+    </insert>
 </mapper> 

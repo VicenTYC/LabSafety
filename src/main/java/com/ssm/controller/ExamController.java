@@ -22,6 +22,7 @@ import com.ssm.pojo.ExamQuestion;
 import com.ssm.pojo.MultChoiceQuestion;
 import com.ssm.pojo.Question;
 import com.ssm.pojo.SingleChoiceQuestion;
+import com.ssm.pojo.StudentScore;
 import com.ssm.pojo.Teacher;
 import com.ssm.service.ExamService;
 
@@ -146,6 +147,7 @@ public class ExamController {
 	@ResponseBody
 	private int addExam(Exam exam) {		
         exam.setExam_finish_time(finishDate(exam));
+        
 		int resStat = examService.addExam(exam);
 		int ifSus;
 		if (resStat == 0) {
@@ -212,6 +214,22 @@ public class ExamController {
 	private int addStudent(int exam_id,String collegeId,String majorId,int examPwd) {
 		
 		return 200;
+	}
+	@RequestMapping("getStuScore.do")
+	@ResponseBody
+	private Map<String, Object> getStudentScore(int page,int limit,int examId){
+		Map<String,Object> res = new HashMap<>();
+		int total = examService.getScoreTotal(examId);
+		List<StudentScore> scoreList = examService.getScoreList(page,limit,examId);
+		if(scoreList!=null) {
+			res.put("code", 200);
+			res.put("msg", "");
+			res.count()
+		}
+			
+		
+		return null;
+		
 	}
 
 	private Question makeQuestion(SingleChoiceQuestion que, int qtype) {
