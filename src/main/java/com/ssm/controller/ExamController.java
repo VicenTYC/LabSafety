@@ -1,30 +1,16 @@
 package com.ssm.controller;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-
-import javax.servlet.http.HttpServletRequest;
-
+import com.ssm.pojo.*;
+import com.ssm.service.ExamService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-import com.ssm.pojo.BankType;
-import com.ssm.pojo.Exam;
-import com.ssm.pojo.ExamQuestion;
-import com.ssm.pojo.MultChoiceQuestion;
-import com.ssm.pojo.Question;
-import com.ssm.pojo.SingleChoiceQuestion;
-import com.ssm.pojo.StudentScore;
-import com.ssm.pojo.Teacher;
-import com.ssm.service.ExamService;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.*;
 
 @Controller
 @RequestMapping("/exam")
@@ -51,12 +37,14 @@ public class ExamController {
 				int amount1 = examService.getAmount(banktype, 1);
 				int amount2 = examService.getAmount(banktype, 2);
 				int amount3 = examService.getAmount(banktype, 3);
+
 				mav.addObject("amount1", amount1);
 				mav.addObject("amount2", amount2);
 				mav.addObject("amount3", amount3);
 				mav.addObject("question1List", question1List);
 				mav.addObject("question2List", question2List);
 				mav.addObject("question3List", question3List);
+
 			}
 			if (op.equals("examlist")) {
 				Teacher teacher = (Teacher) object;
@@ -68,6 +56,11 @@ public class ExamController {
 				List<Exam> examList = examService.getExamList(teacher.getTeacher_id());
 				mav.addObject("examList", examList);
 			}
+			if(op.equals("tableresult")){
+                Teacher teacher = (Teacher) object;
+                List<Exam> examList = examService.getExamList(teacher.getTeacher_id());
+                mav.addObject("examList", examList);
+            }
 			List<BankType> questionBankTypeList = getQuestionBankTypeList();
 			mav.addObject("op", op);
 			mav.addObject("banktype", questionBankTypeList);
@@ -103,8 +96,14 @@ public class ExamController {
 
 	@RequestMapping("addSingleChoice.do")
 	@ResponseBody
-	private int addSingleChoice(SingleChoiceQuestion question) {
-		if (examService.addQuestion(makeQuestion(question, 1)))
+	private int addSingleChoice(QuestionDao queDao) {
+		question.setBank_id(queDao.getQuesBank());
+		question.setQuestion_analysis(queDao.getAnalysis());
+		question.setQuestion_item(queDao.getItemA()+" "+queDao.getItemB()+" "+queDao.getItemC()+" "+queDao.getItemD());
+		question.setQuestion_type(1);
+		question.setQuestion_content(queDao.getQuestion());
+		question.setQuestion_answer(queDao.getAnswer());
+		if (examService.addQuestion(question,queDao.getIfPractice()))
 			return 200;
 		else
 			return 500;
@@ -112,13 +111,14 @@ public class ExamController {
 
 	@RequestMapping("addTofChoice.do")
 	@ResponseBody
-	private int addTofChoice(int quesBank, String queContent, String answer, String analysis) {
-		question.setBank_id(quesBank);
-		question.setQuestion_content(queContent);
-		question.setQuestion_answer(answer);
-		question.setQuestion_analysis(analysis);
+	private int addTofChoice(QuestionDao queDao) {
+		question.setBank_id(queDao.getQuesBank());
+		question.setQuestion_analysis(queDao.getAnalysis());
+		question.setQuestion_item("");
 		question.setQuestion_type(3);
-		if (examService.addQuestion(question))
+		question.setQuestion_content(queDao.getQuestion());
+		question.setQuestion_answer(queDao.getAnswer());
+		if (examService.addQuestion(question, queDao.getIfPractice()))
 			return 200;
 		else
 			return 500;
@@ -126,18 +126,14 @@ public class ExamController {
 
 	@RequestMapping("addMultChoice.do")
 	@ResponseBody
-	private int addMultChoice(MultChoiceQuestion que) {
-		String str = que.getItemA() + " " + que.getItemB() + " " + que.getItemC() + " " + que.getItemD();
-		String answer = "";
-		for (String iter : que.getAnswer())
-			answer += iter + " ";
-		question.setBank_id(que.getQuesBank());
-		question.setQuestion_analysis(que.getAnalysis());
-		question.setQuestion_content(que.getQuestion());
-		question.setQuestion_item(str);
-		question.setQuestion_answer(answer);
+	private int addMultChoice(QuestionDao queDao) {
+		question.setBank_id(queDao.getQuesBank());
+		question.setQuestion_analysis(queDao.getAnalysis());
+		question.setQuestion_item(queDao.getItemA()+" "+queDao.getItemB()+" "+queDao.getItemC()+" "+queDao.getItemD());
 		question.setQuestion_type(2);
-		if (examService.addQuestion(question))
+		question.setQuestion_content(queDao.getQuestion());
+		question.setQuestion_answer(queDao.getAnswer());
+		if (examService.addQuestion(question,queDao.getIfPractice()))
 			return 200;
 		else
 			return 500;
@@ -218,29 +214,22 @@ public class ExamController {
 	@RequestMapping("getStuScore.do")
 	@ResponseBody
 	private Map<String, Object> getStudentScore(int page,int limit,int examId){
-		Map<String,Object> res = new HashMap<>();
+		Map<String,Object> res = new HashMap();
 		int total = examService.getScoreTotal(examId);
 		List<StudentScore> scoreList = examService.getScoreList(page,limit,examId);
 		if(scoreList!=null) {
-			res.put("code", 200);
-			res.put("msg", "");
-			res.count()
+			res.put("code", 0);
+			res.put("message", "");
+			res.put("total",total);
+            res.put("data",scoreList);
 		}
-			
-		
-		return null;
-		
-	}
-
-	private Question makeQuestion(SingleChoiceQuestion que, int qtype) {
-		String str = que.getItemA() + " " + que.getItemB() + " " + que.getItemC() + " " + que.getItemD();
-		question.setBank_id(que.getQuesBank());
-		question.setQuestion_analysis(que.getAnalysis());
-		question.setQuestion_content(que.getQuestion());
-		question.setQuestion_item(str);
-		question.setQuestion_answer(que.getAnswer());
-		question.setQuestion_type(qtype);
-		return question;
+		else
+        {
+            res.put("code",-1);
+            res.put("message","获取数据失败");
+            res.put("total",total);
+        }
+		return res;
 	}
 
 	private ExamQuestion makeExamQuestion(Question que, int examId) {

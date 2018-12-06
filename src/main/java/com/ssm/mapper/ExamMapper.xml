@@ -40,7 +40,15 @@
 		      values
 		      (#{question_content},#{question_item},#{question_answer},#{question_type},#{bank_id},#{question_analysis})
      </insert>
-    
+
+    <insert id="addPracticeQuestion"  parameterType="com.ssm.pojo.Question">
+		      insert into
+		      practice_question_bank
+		      ( question_content,question_item,question_answer,question_type,bank_id,question_analysis)
+		      values
+		      (#{question_content},#{question_item},#{question_answer},#{question_type},#{bank_id},#{question_analysis})
+     </insert>
+
       <select id="getExamByName"  parameterType="String" resultType="com.ssm.pojo.Exam">
          SELECT
            *
@@ -52,6 +60,7 @@
            *
           FROM exam
           where teacher_id=#{teacherId}
+          order by exam_begin_time
      </select>
      <select id="getQuestionByBank" resultType="com.ssm.pojo.Question">
         select *
@@ -99,4 +108,9 @@
          where exam_id= #{examId}
          limit #{start},#{limit}
      </select>
+    <select id="getScoreTotal" parameterType="int" resultType="int">
+        select count(*)
+        from student_score
+        where exam_id = #{examId}
+    </select>
  </mapper> 

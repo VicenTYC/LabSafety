@@ -1,12 +1,8 @@
 package com.ssm.service;
 
-import java.util.List;
+import com.ssm.pojo.*;
 
-import com.ssm.pojo.BankType;
-import com.ssm.pojo.Exam;
-import com.ssm.pojo.ExamQuestion;
-import com.ssm.pojo.Question;
-import com.ssm.pojo.StudentScore;
+import java.util.List;
 
 public interface ExamService {
 
@@ -20,7 +16,7 @@ public interface ExamService {
 
 	boolean deleteQuestionById(int qid);
 
-	boolean addQuestion(Question question);
+	boolean addQuestion(Question question,int ifPractice);
 
 	int addExam(Exam exam);
 

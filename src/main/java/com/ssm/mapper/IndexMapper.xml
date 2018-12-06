@@ -36,8 +36,8 @@
 		order by type_id
 	</select>
 	
-	<select id="getQuestionBankTypeList" resultType="String">
-		select bank_name
+	<select id="getQuestionBankTypeList" resultType="com.ssm.pojo.BankType">
+		select *
 		from bank_type
 		order by type_id
 	</select>
@@ -66,16 +66,7 @@
 		select *
 		from exam
 		where college = #{college} and ( major = #{major} or major = "全部专业" )
-		<if test="date !=null and date !=''">      
-       <![CDATA[
-             and   exam_begin_time >= DATE_FORMAT(#{date}, '%Y-%m-%d %h:%s')
-             or(
-                 exam_begin_time <= DATE_FORMAT(#{date}, '%Y-%m-%d %h:%s')
-                 and 
-                  exam_finish_time >= DATE_FORMAT(#{date}, '%Y-%m-%d %h:%s')
-             )
-                ]]>
-		</if>
+		order by exam_begin_time
 	</select>
 	
 	<select id="findExamById" parameterType="int" resultType="com.ssm.pojo.Exam">
@@ -94,7 +85,14 @@
         student_score
        (exam_id,student_id,score,wrong_question,student_college,student_major,student_name)
        values
-       (#{param1},#{param2},#{param3},#{param4},#{param5},#{param6},#{parame7})
+       (#{param1},#{param2},#{param3},#{param4},#{param5},#{param6},#{param7},#{param8})
        
     </insert>
-</mapper> 
+	<select id="getPracticeQuestions" resultType="com.ssm.pojo.Question" parameterType="int">
+		select *
+		from practice_question_bank
+		where bank_id=#{bankId}
+		order by question_type
+		limit #{start},#{limit}
+	</select>
+</mapper>

@@ -1,15 +1,9 @@
 package com.ssm.mapper;
 
-import java.util.List;
-
+import com.ssm.pojo.*;
 import org.apache.ibatis.annotations.Param;
-import org.junit.runners.Parameterized.Parameters;
 
-import com.ssm.pojo.BankType;
-import com.ssm.pojo.Exam;
-import com.ssm.pojo.ExamQuestion;
-import com.ssm.pojo.Question;
-import com.ssm.pojo.StudentScore;
+import java.util.List;
 
 public interface  ExamMapper {
 
@@ -24,6 +18,8 @@ public interface  ExamMapper {
 	public int deleteQuestionById(@Param("qid")int qid);
 
 	public int addQuestion(Question question);
+
+	int addPracticeQuestion(Question question);
 
 	public Exam getExamByName(@Param("exam_name")String exam_name);
 
@@ -41,5 +37,5 @@ public interface  ExamMapper {
 
 	public List<StudentScore> getScoreList(@Param("start")int startClum,@Param("limit") int limit, @Param("examId")int examId);
 
-
+    int getScoreTotal(@Param("examId") int examId);
 }

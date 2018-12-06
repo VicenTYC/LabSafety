@@ -1,18 +1,10 @@
 package com.ssm.mapper;
 
-import java.util.List;
-
-import javax.faces.flow.builder.FlowBuilderParameter;
-
+import com.ssm.pojo.*;
 import org.apache.ibatis.annotations.Param;
 
-import com.ssm.pojo.Exam;
-import com.ssm.pojo.FileRule;
-import com.ssm.pojo.FileType;
-import com.ssm.pojo.LearningFile;
-import com.ssm.pojo.Question;
-import com.ssm.pojo.Regulation;
-import com.ssm.pojo.SystemNotice;
+import java.util.Date;
+import java.util.List;
 
 public interface IndexMapper {
 
@@ -25,7 +17,7 @@ public interface IndexMapper {
 
 	List<FileType> getFileTypeList();
 
-	List<String> getQuestionBankTypeList();
+	List<BankType> getQuestionBankTypeList();
 
 	List<LearningFile> getLearningFileByType(@Param("fileType")int fileType,@Param("start") int sta);
 
@@ -33,12 +25,13 @@ public interface IndexMapper {
 
 	int getFileRuleAmount();
 
-	Exam findExam(@Param("date")String date, @Param("college")String student_college, @Param("major")String student_major);
+	List<Exam> findExam( @Param("college")String student_college, @Param("major")String student_major);
 
 	Exam findExamById(@Param("examId")int examId);
 
 	List<Question> getQuestionOfPaper(@Param("examId")int examId, @Param("quesType")int quesType);
 
-	int addStudentScore(@Param("examId")int examId, @Param("studentId")String studentId, @Param("right")int right, @Param("wrongQuestion")String wrongQuestion, String string, String string2,String student_name);
-   
+	int addStudentScore(@Param("examId") int examId, @Param("studentId") String studentId, @Param("right") int right, @Param("wrongQuestion") String wrongQuestion, String string, String string2, String student_name, Date exam_begin_time);
+
+    List<Question> getPracticeQuestions(@Param("bankId") int bankId,@Param("start") int start,@Param("limit") int limit);
 }

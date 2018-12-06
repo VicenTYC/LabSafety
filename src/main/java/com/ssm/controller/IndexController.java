@@ -1,24 +1,8 @@
 package com.ssm.controller;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.net.URLEncoder;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-
-import javax.print.DocFlavor.STRING;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import com.ssm.pojo.*;
+import com.ssm.service.IndexService;
+import com.ssm.service.LearnService;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,17 +11,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.alibaba.fastjson.JSONArray;
-import com.ssm.pojo.Exam;
-import com.ssm.pojo.FileRule;
-import com.ssm.pojo.FileType;
-import com.ssm.pojo.LearningFile;
-import com.ssm.pojo.Question;
-import com.ssm.pojo.Regulation;
-import com.ssm.pojo.Student;
-import com.ssm.pojo.SystemNotice;
-import com.ssm.service.IndexService;
-import com.ssm.service.LearnService;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
+import java.net.URLEncoder;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 @Controller
 @RequestMapping("")
@@ -48,9 +27,9 @@ public class IndexController {
 	@Autowired
 	private LearnService learnService;
     
-	Map<Integer,Map<String,String> > serverExam = new HashMap<>();
+	Map<Integer,Map<String,String> > serverExam = new HashMap();
 	Map<String,String> studentAnswer ;
-    Map<Integer,Map<Integer,List<Question>>> examQuestionList = new HashMap<>();
+    Map<Integer,Map<Integer,List<Question>>> examQuestionList = new HashMap();
     Map<Integer,List<Question>> examQuestion ;
 	
 	private ModelAndView ERROR_PAGE = new ModelAndView("error");
@@ -76,13 +55,24 @@ public class IndexController {
 		// 获取无内容系统公告
 		List<SystemNotice> systemNoticeList = indexService.getSystemNotice(0, 5);
 		List<FileType> fileTypeList = getFileTypeList();
-		List<String> questionBankTypeList = getQuestionBankTypeList();
+		List<BankType> questionBankTypeList = getQuestionBankTypeList();
 		Student student = (Student)request.getSession().getAttribute("student");
 		 SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");//设置日期格式
-		String date =  df.format(new Date());		
-        Exam examInfo =  indexService.findExam(date,student.getStudent_college(),student.getStudent_major());
-	
-        mav.addObject("examInfo",examInfo);		
+		String date =  df.format(new Date());
+		Date now = new Date();
+        List<Exam> examInfo =  indexService.findExam(student.getStudent_college(),student.getStudent_major());
+	    Exam resExam = null;
+        for(Exam iter : examInfo){
+        	if(iter.getExam_begin_time().after(now)){
+        		resExam = iter;
+        		break;
+			}
+			else if(iter.getExam_finish_time().after(now)){
+        		resExam = iter;
+        		break;
+			}
+		}
+        mav.addObject("examInfo",resExam);
 		mav.addObject("fileTypeList", fileTypeList);
 		mav.addObject("questionBankTypeList", questionBankTypeList);
 		mav.addObject("regulationList", regulationList);
@@ -191,13 +181,17 @@ public class IndexController {
 		out.close();
 	}
 	@RequestMapping("startExam.do")
-    private ModelAndView  ifTimeStartExam(@RequestParam(defaultValue = "0")int examId) {
+    private ModelAndView  ifTimeStartExam(@RequestParam(defaultValue = "0")int examId,@RequestParam(defaultValue = "-1")int pwd) {
 		ModelAndView indexMav = new ModelAndView("forward:/getIndex.do");
 		ModelAndView noteMav =new ModelAndView("forward:/getExamNote.do");
 		if(examId==0)
 			return indexMav;
     	Date now = new Date();
     	Exam exam = indexService.findExamById(examId);
+    	if(pwd==-1||exam.getExampwd()!=pwd) {
+ 			indexMav.addObject("errMsg","密码错误，重新输入");
+ 			return indexMav;
+		}
     	if(now.before(exam.getExam_begin_time()))
     		indexMav.addObject("errMsg", "考试还未开始");
     	else if(now.after(exam.getExam_finish_time()))
@@ -381,7 +375,7 @@ public class IndexController {
 				m++;
 			}
 		}	
-		int res = indexService.addStudentScore(examId,student.getStudent_id(),right,wrongQuestion,student.getStudent_college(),student.getStudent_major(),student.getStudent_name());
+		int res = indexService.addStudentScore(examId,student.getStudent_id(),right,wrongQuestion,student.getStudent_college(),student.getStudent_major(),student.getStudent_name(),nowExam.getExam_begin_time());
 		if(res ==1) {
 			//提交成功则删除缓存的提交答案
 			//开考五分钟之内交卷，则无缓存答案
@@ -402,13 +396,23 @@ public class IndexController {
 		}
 		return status;
 	}
+
+	@RequestMapping("getPractice.do")
+	@ResponseBody
+	private ModelAndView getPractice(int bankId,int page,int limit,@RequestParam(defaultValue  = "0") int ifShowAns){
+		ModelAndView practice = new ModelAndView("practice");
+		List<Question> practiceList = indexService.getPracticeQuestions(bankId,page,limit);
+        practice.addObject("quesList",practiceList);
+        practice.addObject("ifShowAns",ifShowAns);
+		return practice;
+	}
 	// 获取在线学习的文章类型列表
 	public List<FileType> getFileTypeList() {
 		return indexService.getFileTypeList();
 	}
 
 	// 获取试题库类型列表
-	public List<String> getQuestionBankTypeList() {
+	public List<BankType> getQuestionBankTypeList() {
 		return indexService.getQuestionBankTypeList();
 	}
 }

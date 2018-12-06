@@ -1,0 +1,41 @@
+#all #left ul{
+	background: #6696c7;
+}
+#all #left ul dd{
+	margin-top:4px;
+}
+#right .rig-top{
+	margin-top: 10px;
+}
+#right .rig-top span{
+	font-size: :1.25rem;
+}
+#right .rig-top span a {
+	font-size: 1.25rem;
+}
+#right .rig-mid{
+	width:100%;
+}
+#fileList{
+	margin-top: 20px; 
+	border: 1px #999999e6 solid;
+	 background: #fff;
+}
+#fileList .preitem{
+	margin-bottom: 10px;
+}
+#fileList .rig-mid-text{
+	float: right; 
+	width: 90%;
+}
+#fileList .rig-mid-text p{
+	font-size: 1.1rem;
+}
+#fileList #fileContent{
+	padding-left: 20px; color: #5a5955; font-size: 14px;
+}
+#fenye{
+	    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}

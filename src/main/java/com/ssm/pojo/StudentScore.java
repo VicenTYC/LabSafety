@@ -1,6 +1,12 @@
 package com.ssm.pojo;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class StudentScore {
  private int id;
  private int exam_id;
@@ -10,7 +16,9 @@ public class StudentScore {
  private String student_college;
  private String student_major;
  private String student_name;
- 
+	@JsonFormat(pattern = "yyyy年MM月dd日 HH:mm:ss")
+ private Date exam_begin_time;
+
 public int getId() {
 	return id;
 }
@@ -59,5 +67,19 @@ public String getStudent_name() {
 public void setStudent_name(String student_name) {
 	this.student_name = student_name;
 }
- 
+	public Date getExam_begin_time() {
+		return exam_begin_time;
+	}
+
+	public void setExam_begin_time(String str) {
+		str = str.replace(".0", "");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		Date exam_begin_time;
+		try {
+			exam_begin_time = sdf.parse(str);
+			this.exam_begin_time = exam_begin_time;
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+	}
 }

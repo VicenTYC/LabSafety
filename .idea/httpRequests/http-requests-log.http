@@ -1,0 +1,8 @@
+GET http://localhost:8080/labsafety
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-04T024348.200.html
+
+###
+

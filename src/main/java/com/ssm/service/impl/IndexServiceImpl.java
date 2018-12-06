@@ -1,13 +1,13 @@
 package com.ssm.service.impl;
 
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.ssm.mapper.IndexMapper;
 import com.ssm.pojo.*;
 import com.ssm.service.IndexService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.Date;
+import java.util.List;
 
 @Service(value = "indexService")
 public class IndexServiceImpl implements IndexService {
@@ -32,7 +32,7 @@ public class IndexServiceImpl implements IndexService {
 		return indexMapper.getFileTypeList();
 	}
 
-	public List<String> getQuestionBankTypeList() {		
+	public List<BankType> getQuestionBankTypeList() {
 		return indexMapper.getQuestionBankTypeList();
 	}
 
@@ -51,8 +51,8 @@ public class IndexServiceImpl implements IndexService {
 		return indexMapper.getFileRuleAmount();
 	}
 
-	public Exam findExam(String date, String student_college, String student_major) {
-		return indexMapper.findExam(date,student_college,student_major);
+	public List<Exam> findExam( String student_college, String student_major) {
+		return indexMapper.findExam(student_college,student_major);
 	}
 
 	public Exam findExamById(int examId) {
@@ -63,8 +63,13 @@ public class IndexServiceImpl implements IndexService {
 		return indexMapper.getQuestionOfPaper(examId,quesType);
 	}
 
-	public int addStudentScore(int examId, String student_id, int right, String wrongQuestion, String string, String string2,String student_name) {
-		return indexMapper.addStudentScore(examId,student_id,right,wrongQuestion,string,string2,student_name);
+	public int addStudentScore(int examId, String student_id, int right, String wrongQuestion, String string, String string2, String student_name, Date exam_begin_time) {
+		return indexMapper.addStudentScore(examId,student_id,right,wrongQuestion,string,string2,student_name,exam_begin_time);
+	}
+
+	public List<Question> getPracticeQuestions(int bankId, int page, int limit) {
+		int start = (page-1)*limit;
+		return indexMapper.getPracticeQuestions(bankId,start,limit);
 	}
 
 

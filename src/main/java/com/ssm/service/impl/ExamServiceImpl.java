@@ -1,18 +1,12 @@
 package com.ssm.service.impl;
 
-import java.util.List;
-
+import com.ssm.mapper.ExamMapper;
+import com.ssm.pojo.*;
+import com.ssm.service.ExamService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.servlet.tags.EscapeBodyTag;
 
-import com.ssm.mapper.ExamMapper;
-import com.ssm.pojo.BankType;
-import com.ssm.pojo.Exam;
-import com.ssm.pojo.ExamQuestion;
-import com.ssm.pojo.Question;
-import com.ssm.pojo.StudentScore;
-import com.ssm.service.ExamService;
+import java.util.List;
 @Service(value="examServie")
 public class ExamServiceImpl implements ExamService {
      @Autowired
@@ -44,10 +38,13 @@ public class ExamServiceImpl implements ExamService {
 	}
 
 
-	public boolean addQuestion(Question question) {
-		return (examMapper.addQuestion(question)==1)?true:false;
+	public boolean addQuestion(Question question,int ifPractice) {
+		if(ifPractice==0)
+			return (examMapper.addQuestion(question)==1)?true:false;
+		if(ifPractice==1)
+			return (examMapper.addPracticeQuestion(question)==1)?true:false;
+		return true;
 	}
-
 
 	public int addExam(Exam exam) {
 		Exam sec = examMapper.getExamByName(exam.getExam_name());
@@ -83,17 +80,13 @@ public class ExamServiceImpl implements ExamService {
 		return status;
 	}
 
-
-	@Override
 	public List<StudentScore> getScoreList(int page, int limit, int examId) {
 		int starClum = (page-1)*limit;
 		return examMapper.getScoreList(starClum,limit,examId);
 	}
 
-
-	@Override
 	public int getScoreTotal(int examId) {
-		return 0;
+		return examMapper.getScoreTotal(examId);
 	}
 
 }
