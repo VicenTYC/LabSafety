@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.alibaba.fastjson.JSON;
 import com.ssm.pojo.LearningFile;
 import com.ssm.pojo.Regulation;
 import com.ssm.pojo.SystemNotice;
