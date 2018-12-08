@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Map;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import com.ssm.pojo.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,11 +14,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.ssm.pojo.LearningFile;
-import com.ssm.pojo.Regulation;
-import com.ssm.pojo.SystemNotice;
 import com.ssm.service.IndexService;
 import com.ssm.service.LearnService;
+
+import javax.ws.rs.DefaultValue;
 
 @Controller
 @RequestMapping("/learn")
@@ -100,6 +101,24 @@ public class LearnController {
     	   res.put("stat", "500");
        }
 	return res;
+	}
+	@RequestMapping("getPrectice.do")
+	@ResponseBody
+	private Map<String,Object>getPracticeQuestion(int bankId,int page,int limit,@RequestParam(defaultValue = "0") int quesAmount){
+		Map<String,Object> result = new HashMap<String, Object>();
+		List<Question> practiceList = indexService.getPracticeQuestions(bankId,page,limit);
+		if(quesAmount==0)
+			 quesAmount  = indexService.getPracticeQuestionsAmount(bankId);
+		if(practiceList!=null) {
+			result.put("status", 200);
+			result.put("quesAmount", quesAmount);
+			result.put("quesList", practiceList);
+		}
+		else{
+			result.put("status", 500);
+			result.put("errMsg","出错了，正在修");
+		}
+		return result;
 	}
 
 }

@@ -32,4 +32,6 @@ public interface IndexService {
 	int addStudentScore(int examId, String student_id, int right, String wrongQuestion, String string, String string2, String student_name, Date exam_begin_time);
 
     List<Question> getPracticeQuestions(int bankId, int page, int limit);
+
+    int getPracticeQuestionsAmount(int bankId);
 }

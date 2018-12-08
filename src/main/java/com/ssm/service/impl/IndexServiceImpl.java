@@ -72,5 +72,9 @@ public class IndexServiceImpl implements IndexService {
 		return indexMapper.getPracticeQuestions(bankId,start,limit);
 	}
 
+	public int getPracticeQuestionsAmount(int bankId) {
+		return indexMapper.getPracticeQuestionsAmount(bankId);
+	}
+
 
 }

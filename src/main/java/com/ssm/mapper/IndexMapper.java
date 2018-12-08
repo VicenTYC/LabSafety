@@ -34,4 +34,6 @@ public interface IndexMapper {
 	int addStudentScore(@Param("examId") int examId, @Param("studentId") String studentId, @Param("right") int right, @Param("wrongQuestion") String wrongQuestion, String string, String string2, String student_name, Date exam_begin_time);
 
     List<Question> getPracticeQuestions(@Param("bankId") int bankId,@Param("start") int start,@Param("limit") int limit);
+
+    int getPracticeQuestionsAmount(@Param("bankId") int bankId);
 }

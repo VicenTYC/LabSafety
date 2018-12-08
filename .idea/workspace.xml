@@ -2,723 +2,34 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="ssm:war exploded" />
+      <artifact name="LabSafety-master:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e623727-066d-418c-b836-4c5d9784db2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/LabSafety-master.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/LabSafety_master_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/LabSafety_master_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ssm_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ssm_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_core_3_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_dysmsapi_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_api_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_json_lib_json_lib_jdk15_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20160810.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_2_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_3_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_3_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_3_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_3_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_3_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_3_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_3_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_3_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_3_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/da10da49-6dbc-4965-904a-aee4af59daec.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-12-04T024348.200.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/84d37fb6-e2a8-43b0-a7fc-47ba73716af5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/84d37fb6-e2a8-43b0-a7fc-47ba73716af5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/controller/LearnController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/controller/LearnController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/controller/ExamController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/controller/IndexController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/controller/LearnController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/mapper/ExamMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/mapper/ExamMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/mapper/IndexMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/mapper/IndexMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/mapper/LearnMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/mapper/LearnMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/msg/ServerMsg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/BankType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/Exam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/ExamQuestion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/FileRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/FileType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/LearningFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/MultChoiceQuestion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/Question.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/QuestionDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/Regulation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/SingleChoiceQuestion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/StudentScore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/SystemNotice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/Teacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/ExamService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/IndexService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/LearnService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/impl/ExamServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/impl/IndexServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/impl/LearnServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/util/MapRequestVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/css/bootstrap-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/css/bootstrap-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/css/bootstrap-theme.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/css/bootstrapValidator.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/css/bootstrapValidator.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/css/loginstyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/css/modern-business.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/js/bootstrapValidator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/js/bootstrapValidator.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/bootstrap/js/npm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/css/exam_iconfont.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/css/exam_main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/css/exam_test.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/css/h5/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/css/html5.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/css/index_shouye.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/css/layui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/css/learnfile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/css/system_notice.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/font/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/font/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/images/3wm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/images/banner.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/images/lhdl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/images/lunbo1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/images/lunbo2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/images/lunbo3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/images/lunbo4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/images/xinong.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/images/yhdl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/images/zyaq.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/css/layui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/css/layui.mobile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/css/modules/code.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/css/modules/laydate/default/laydate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/css/modules/layer/default/icon-ext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/css/modules/layer/default/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/css/modules/layer/default/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/css/modules/layer/default/loading-0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/css/modules/layer/default/loading-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/css/modules/layer/default/loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/exampaper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/font/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/font/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/font/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/font/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/formSelects-v4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/h5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/10.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/11.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/12.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/13.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/14.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/15.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/16.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/17.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/18.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/19.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/20.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/21.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/22.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/23.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/24.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/25.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/26.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/27.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/28.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/29.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/30.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/31.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/32.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/33.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/34.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/35.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/36.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/37.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/38.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/39.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/40.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/41.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/42.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/43.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/44.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/45.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/46.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/47.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/48.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/49.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/50.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/51.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/52.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/53.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/54.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/55.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/56.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/57.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/58.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/59.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/60.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/61.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/62.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/63.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/64.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/65.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/66.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/67.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/68.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/69.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/70.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/71.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/images/face/9.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/jquery.easy-pie-chart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/colorpicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/element.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/flow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/laydate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/layedit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/laypage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/laytpl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/mobile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/rate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/slider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/tree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/upload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/layui.all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/layui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/three.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/time/jquery.countdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/controller/ExamController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/controller/IndexController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/controller/LearnController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/mapper/ExamMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/mapper/IndexMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/mapper/LearnMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/msg/ServerMsg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/pojo/BankType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/pojo/Exam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/pojo/ExamQuestion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/pojo/FileRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/pojo/FileType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/pojo/LearningFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/pojo/Question.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/pojo/QuestionDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/pojo/Regulation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/pojo/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/pojo/StudentScore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/pojo/SystemNotice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/pojo/Teacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/service/ExamService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/service/IndexService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/service/LearnService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/service/impl/ExamServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/service/impl/IndexServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/service/impl/LearnServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/util/MapRequestVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/redis.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/springMVC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/com.springsource.org.aopalliance-1.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/com.springsource.org.apache.commons.logging-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/com.springsource.org.apache.log4j-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/druid-1.0.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/fastjson-1.2.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/hamcrest-all-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.5.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-2.5.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-databind-2.5.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-3.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.6-bin.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/servlet-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aop-3.2.16.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aspects-3.2.16.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-beans-3.2.16.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-3.2.16.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-core-3.2.16.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-expression-3.2.16.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jdbc-3.2.16.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-test-3.2.16.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-tx-3.2.16.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-3.2.16.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-3.2.16.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/file/a.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/file/a2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/file/a3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/file/a4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/file/a5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/content.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/error.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/exam/ExamNotes.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/exam/exam.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/exam/examNote.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/fileresource.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/filerules.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/foot.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/head.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/practice.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/regulation.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/sysnotice.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/common/Copyright.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/common/footer.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/common/importjs.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/common/linkcss.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/common/meta.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/images/point_green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/images/point_yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/images/q.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/Hui-iconfont/1.0.8/demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/Hui-iconfont/1.0.8/iconfont.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/Hui-iconfont/1.0.8/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/Hui-iconfont/1.0.8/iconfont.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/Hui-iconfont/1.0.8/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/Hui-iconfont/1.0.8/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/Hui-iconfont/1.0.8/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/jquery.validation/1.14.0/additional-methods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/jquery.validation/1.14.0/jquery.validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/jquery.validation/1.14.0/messages_zh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/jquery.validation/1.14.0/validate-methods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/jquery/1.9.1/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/jquery/1.9.1/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layer/2.4/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layer/2.4/skin/default/icon-ext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layer/2.4/skin/default/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layer/2.4/skin/default/loading-0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layer/2.4/skin/default/loading-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layer/2.4/skin/default/loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layer/2.4/skin/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/css/formSelects-v4.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/css/layui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/css/layui.mobile.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/css/modules/code.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/css/modules/laydate/default/laydate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/css/modules/layer/default/icon-ext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/css/modules/layer/default/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/css/modules/layer/default/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/css/modules/layer/default/loading-0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/css/modules/layer/default/loading-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/css/modules/layer/default/loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/css/multselect.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/font/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/font/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/font/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/font/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/formSelects-v4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/10.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/11.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/12.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/13.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/14.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/15.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/16.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/17.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/18.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/19.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/20.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/21.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/22.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/23.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/24.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/25.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/26.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/27.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/28.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/29.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/30.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/31.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/32.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/33.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/34.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/35.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/36.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/37.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/38.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/39.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/40.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/41.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/42.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/43.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/44.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/45.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/46.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/47.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/48.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/49.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/50.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/51.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/52.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/53.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/54.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/55.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/56.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/57.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/58.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/59.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/60.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/61.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/62.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/63.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/64.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/65.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/66.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/67.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/68.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/69.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/70.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/71.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/images/face/9.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/lay/modules/carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/lay/modules/code.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/lay/modules/element.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/lay/modules/flow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/lay/modules/form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/lay/modules/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/lay/modules/laydate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/lay/modules/layedit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/lay/modules/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/lay/modules/laypage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/lay/modules/laytpl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/lay/modules/mobile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/lay/modules/rate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/lay/modules/table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/lay/modules/tree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/lay/modules/upload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/lay/modules/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/layui.all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/lib/layui/layui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/css/H-ui.admin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/css/H-ui.login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/images/acrossTab/acrossTab-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/images/admin-login-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/images/admin-loginform-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/images/cn.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/images/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/images/um.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/js/H-ui.admin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/js/H-ui.admin.page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/js/de_DE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/blue/acrossTab-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/blue/acrossTab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/blue/icon_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/blue/skin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/default/acrossTab-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/default/acrossTab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/default/icon_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/default/skin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/green/acrossTab-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/green/acrossTab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/green/icon_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/green/skin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/orange/acrossTab-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/orange/acrossTab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/orange/icon_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/orange/skin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/red/acrossTab-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/red/acrossTab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/red/icon_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/red/skin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/yellow/acrossTab-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/yellow/acrossTab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/yellow/icon_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui.admin/skin/yellow/skin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/css/H-ui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/css/H-ui.ie.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/css/H-ui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/css/H-ui.reset.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/Hui-tags/empty.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/acrossTab/acrossTab-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/acrossTab/acrossTab-close.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/acrossTab/acrossTab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/dataTable/sort_asc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/dataTable/sort_both.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/dataTable/sort_desc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/dropDown/icon-jt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/201.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/202.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/203.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/204.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/205.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/206.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/207.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/208.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/209.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/210.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/10.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/100.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/101.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/102.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/103.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/104.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/105.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/106.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/11.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/12.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/13.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/14.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/15.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/16.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/18.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/19.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/20.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/21.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/22.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/23.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/24.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/25.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/26.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/27.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/28.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/29.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/30.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/31.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/32.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/33.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/34.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/35.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/36.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/37.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/38.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/39.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/40.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/41.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/42.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/43.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/44.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/45.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/46.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/47.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/48.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/49.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/50.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/51.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/52.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/53.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/54.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/55.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/56.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/57.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/58.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/59.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/60.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/61.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/62.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/63.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/64.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/65.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/66.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/67.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/68.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/69.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/70.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/71.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/72.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/73.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/74.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/75.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/76.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/77.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/78.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/79.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/80.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/81.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/82.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/83.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/84.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/85.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/86.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/87.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/88.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/89.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/9.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/90.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/91.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/92.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/93.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/94.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/95.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/96.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/97.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/98.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/face/QQ/99.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/aero.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/aero@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/blue@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/green@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/grey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/grey@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/minimal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/minimal@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/orange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/orange@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/pink.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/pink@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/purple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/purple@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/red@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iCheck/yellow@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/iconpic-arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/jselect/iconpic-arrow-down2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/loading/loading-b.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/loading/loading-s.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/rollpic/unslider-arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/star/iconpic-star-S-default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/star/iconpic-star-S.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/steps/step_arrow-active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/steps/step_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/steps/step_bg-active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/steps/step_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/ucnter/avatar-default-S.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/ucnter/avatar-default.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/ucnter/avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/ucnter/noavatar_small.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/validform/iconpic-error.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/validform/iconpic-right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/validform/iconpic-warning.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/verticalTab/tabNav-active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/verticalTab/tabNav-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/verticalTab/tabNav.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/verticalTab/tabNav_right-active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/verticalTab/tabNav_right-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/verticalTab/tabNav_right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/images/verticalTab/tab_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/js/H-ui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/static/h-ui/js/H-ui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/teacher.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/teacher/add_one_checkbox.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/teacher/add_one_radio.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/teacher/addpractice.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/teacher/addquestion.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/teacher/examlist.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/teacher/importquestions.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/teacher/importstudent.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/teacher/newexam.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/teacher/picresult.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/teacher/questionslist.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/teacher/tableresult.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/teacher/teacher_menu.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/teacher/teacher_nav.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/teacher/trueorfalse.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/top.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/layui_extends/selectM.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/layui_extends/selectN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/mapper/IndexMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/mapper/IndexMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/mapper/IndexMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/mapper/IndexMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/service/IndexService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/service/IndexService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/IndexServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/IndexServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resource/css/learnfile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Resource/css/learnfile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/practice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/practice.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/controller/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/controller/LearnController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/controller/LearnController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/mapper/IndexMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/mapper/IndexMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/IndexService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/service/IndexService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/impl/IndexServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/service/impl/IndexServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/css/learnfile.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/css/learnfile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/controller/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/controller/LearnController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/controller/LearnController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/mapper/IndexMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/mapper/IndexMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/mapper/IndexMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/mapper/IndexMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/service/IndexService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/service/IndexService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/service/impl/IndexServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/service/impl/IndexServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/practice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/practice.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -748,20 +59,147 @@
         <item name="labsafety@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="labsafety@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="labsafety: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/mapper/IndexMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="37" column="49" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/exam/exam.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-10296">
+              <caret line="63" column="109" selection-start-line="63" selection-start-column="70" selection-end-line="63" selection-end-column="109" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/IndexController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="221" column="25" lean-forward="true" selection-start-line="221" selection-start-column="25" selection-end-line="221" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/IndexService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="759">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/IndexServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1947">
+              <caret line="75" column="50" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="50" />
+              <folding>
+                <element signature="e#2270#2271#0" expanded="true" />
+                <element signature="e#2330#2331#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/fileresource.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3135">
+              <caret line="155" column="37" selection-start-line="155" selection-start-column="28" selection-end-line="155" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/LearnController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="114" column="32" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/mapper/IndexMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="482">
+              <caret line="100" column="13" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/84d37fb6-e2a8-43b0-a7fc-47ba73716af5/console.sql">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/practice.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="806">
+              <caret line="86" column="102" selection-start-line="86" selection-start-column="102" selection-end-line="86" selection-end-column="102" />
+              <caret line="275" column="184" selection-start-line="275" selection-start-column="184" selection-end-line="275" selection-end-column="184" />
+              <caret line="287" column="178" selection-start-line="287" selection-start-column="178" selection-end-line="287" selection-end-column="178" />
+              <caret line="299" column="178" selection-start-line="299" selection-start-column="178" selection-end-line="299" selection-end-column="178" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#label#0;n#li#0;n#ul#0;n#div#0;n#font#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#label#0;n#li#1;n#ul#0;n#div#0;n#font#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#label#0;n#li#2;n#ul#0;n#div#0;n#font#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#label#0;n#li#3;n#ul#0;n#div#0;n#font#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#label#0;n#li#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#label#0;n#li#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#label#0;n#li#2;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>main</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/webapp/asd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/service/IndexService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/IndexServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/mapper/IndexMapper.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/84d37fb6-e2a8-43b0-a7fc-47ba73716af5/console_1.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/mapper/IndexMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Resource/css/learnfile.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/controller/LearnController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/practice.jsp" />
+      </list>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -790,7 +228,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -801,39 +239,91 @@
             <path>
               <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
               <item name="LabSafety-master" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
               <item name="LabSafety-master" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
               <item name="LabSafety-master" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="dataSources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LabSafety-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ssm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LabSafety-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ssm" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LabSafety-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LabSafety-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LabSafety-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="Resource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LabSafety-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="Resource" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544192260109" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544273866224" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.28390804" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -849,12 +339,13 @@
   </component>
   <component name="RunManager">
     <configuration name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.91" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/LabSafety_master_war_exploded/" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="LabSafety-master:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/LabSafety_master_war_exploded" />
+            <option name="CONTEXT_PATH" value="/labsafety" />
           </settings>
         </artifact>
       </deployment>
@@ -934,17 +425,20 @@
       <workItem from="1544190918333" duration="625000" />
       <workItem from="1544191569050" duration="46000" />
       <workItem from="1544191701934" duration="7000" />
-      <workItem from="1544191952609" duration="238000" />
+      <workItem from="1544191952609" duration="1319000" />
+      <workItem from="1544249481778" duration="10203000" />
+      <workItem from="1544268208483" duration="5645000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="916000" />
+    <option name="totallyTimeSpent" value="17845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16471216" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16791044" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -952,23 +446,23 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32899022" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.35211268" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3286334" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Application Servers" order="6" weight="0.32899022" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.23752712" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.09978308" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.329718" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="15" weight="0.37960956" />
+      <window_info anchor="bottom" id="Database Console" order="16" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -981,6 +475,7 @@
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info anchor="right" id="Bean Validation" order="11" />
+      <window_info anchor="right" id="Maven" order="12" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -995,8 +490,180 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/.name">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/asd.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/a" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/filerules.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/84d37fb6-e2a8-43b0-a7fc-47ba73716af5/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/top.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/ExamController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/mapper/ExamMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/ExamServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://84d37fb6-e2a8-43b0-a7fc-47ba73716af5/schema/labsafety/table/practice_question_bank.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/84d37fb6-e2a8-43b0-a7fc-47ba73716af5/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Resource/css/exam_test.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Resource/css/learnfile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="40" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/IndexService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/IndexServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1947">
+          <caret line="75" column="50" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="50" />
+          <folding>
+            <element signature="e#2270#2271#0" expanded="true" />
+            <element signature="e#2330#2331#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="221" column="25" lean-forward="true" selection-start-line="221" selection-start-column="25" selection-end-line="221" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/mapper/IndexMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="100" column="13" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="95" column="109" selection-start-line="95" selection-start-column="102" selection-end-line="95" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/exam/exam.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10296">
+          <caret line="63" column="109" selection-start-line="63" selection-start-column="70" selection-end-line="63" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/mapper/IndexMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="37" column="49" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://84d37fb6-e2a8-43b0-a7fc-47ba73716af5/schema/labsafety/table/practice_question_bank">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/LearnController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="114" column="32" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/fileresource.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3135">
+          <caret line="155" column="37" selection-start-line="155" selection-start-column="28" selection-end-line="155" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/practice.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="86" column="102" selection-start-line="86" selection-start-column="102" selection-end-line="86" selection-end-column="102" />
+          <caret line="275" column="184" selection-start-line="275" selection-start-column="184" selection-end-line="275" selection-end-column="184" />
+          <caret line="287" column="178" selection-start-line="287" selection-start-column="178" selection-end-line="287" selection-end-column="178" />
+          <caret line="299" column="178" selection-start-line="299" selection-start-column="178" selection-end-line="299" selection-end-column="178" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#label#0;n#li#0;n#ul#0;n#div#0;n#font#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#label#0;n#li#1;n#ul#0;n#div#0;n#font#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#label#0;n#li#2;n#ul#0;n#div#0;n#font#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#label#0;n#li#3;n#ul#0;n#div#0;n#font#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#label#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#label#0;n#li#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#label#0;n#li#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
@@ -1004,11 +671,11 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>ssm:war</last-edited>
+          <last-edited>LabSafety-master:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.28390804" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1052,7 +719,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>ssm</last-edited>
+          <last-edited>LabSafety-master</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

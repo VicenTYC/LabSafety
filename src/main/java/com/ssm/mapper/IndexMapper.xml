@@ -95,4 +95,8 @@
 		order by question_type
 		limit #{start},#{limit}
 	</select>
+	<select id="getPracticeQuestionsAmount" parameterType="int" resultType="int">
+		select count(*) from practice_question_bank
+		where bank_id = #{bankId}
+	</select>
 </mapper>
