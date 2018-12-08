@@ -17,6 +17,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/IndexServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/IndexServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Resource/css/learnfile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Resource/css/learnfile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/practice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/practice.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/top.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/controller/IndexController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/controller/LearnController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/controller/LearnController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/mapper/IndexMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/mapper/IndexMapper.class" afterDir="false" />
@@ -89,19 +90,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/IndexController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="221" column="25" lean-forward="true" selection-start-line="221" selection-start-column="25" selection-end-line="221" selection-end-column="25" />
+            <state relative-caret-position="462">
+              <caret line="62" column="110" lean-forward="true" selection-start-line="62" selection-start-column="110" selection-end-line="62" selection-end-column="110" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/top.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#4;n#ul#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/IndexService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="240">
+              <caret line="400" column="32" selection-start-line="400" selection-start-column="21" selection-end-line="400" selection-end-column="32" />
+              <folding>
+                <element signature="e#15265#15266#0" expanded="true" />
+                <element signature="e#15383#15384#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,10 +164,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/practice.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="806">
+            <state relative-caret-position="217">
               <caret line="86" column="102" selection-start-line="86" selection-start-column="102" selection-end-line="86" selection-end-column="102" />
               <caret line="275" column="184" selection-start-line="275" selection-start-column="184" selection-end-line="275" selection-end-column="184" />
               <caret line="287" column="178" selection-start-line="287" selection-start-column="178" selection-end-line="287" selection-end-column="178" />
@@ -180,6 +198,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>main</find>
+      <find>layui-btn layui-btn-warm layui-btn-radiu</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -195,9 +214,10 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/84d37fb6-e2a8-43b0-a7fc-47ba73716af5/console_1.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/mapper/IndexMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/Resource/css/learnfile.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/controller/LearnController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/practice.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/top.jsp" />
       </list>
     </option>
   </component>
@@ -314,7 +334,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544273866224" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544274219588" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -427,18 +447,17 @@
       <workItem from="1544191701934" duration="7000" />
       <workItem from="1544191952609" duration="1319000" />
       <workItem from="1544249481778" duration="10203000" />
-      <workItem from="1544268208483" duration="5645000" />
+      <workItem from="1544268208483" duration="5979000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17845000" />
+    <option name="totallyTimeSpent" value="18179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16791044" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16791044" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -461,7 +480,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="15" weight="0.37960956" />
+      <window_info anchor="bottom" id="Run" order="15" visible="true" weight="0.37960956" />
       <window_info anchor="bottom" id="Database Console" order="16" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -518,13 +537,6 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/84d37fb6-e2a8-43b0-a7fc-47ba73716af5/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/top.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/ExamController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -589,24 +601,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="221" column="25" lean-forward="true" selection-start-line="221" selection-start-column="25" selection-end-line="221" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/mapper/IndexMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="482">
           <caret line="100" column="13" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="95" column="109" selection-start-line="95" selection-start-column="102" selection-end-line="95" selection-end-column="109" />
         </state>
       </provider>
     </entry>
@@ -647,7 +645,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/practice.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
+        <state relative-caret-position="217">
           <caret line="86" column="102" selection-start-line="86" selection-start-column="102" selection-end-line="86" selection-end-column="102" />
           <caret line="275" column="184" selection-start-line="275" selection-start-column="184" selection-end-line="275" selection-end-column="184" />
           <caret line="287" column="178" selection-start-line="287" selection-start-column="178" selection-end-line="287" selection-end-column="178" />
@@ -661,6 +659,35 @@
             <element signature="n#style#0;n#p#0;n#label#0;n#li#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#label#0;n#li#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#label#0;n#li#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="62" column="110" lean-forward="true" selection-start-line="62" selection-start-column="110" selection-end-line="62" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="400" column="32" selection-start-line="400" selection-start-column="21" selection-end-line="400" selection-end-column="32" />
+          <folding>
+            <element signature="e#15265#15266#0" expanded="true" />
+            <element signature="e#15383#15384#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/top.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#4;n#ul#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

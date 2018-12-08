@@ -400,14 +400,20 @@ public class IndexController {
 
 	@RequestMapping("getPractice.do")
 	@ResponseBody
-	private ModelAndView getPractice(int bankId,int page,int limit){
+	private ModelAndView getPractice(@RequestParam(defaultValue = "0") int bankId,@RequestParam(defaultValue = "0")int page,@RequestParam(defaultValue = "0")int limit){
 		ModelAndView practice = new ModelAndView("practice");
-		List<Question> practiceList = indexService.getPracticeQuestions(bankId,page,limit);
-		List<BankType> questionBankTypeList = getQuestionBankTypeList();
-		int quesAmount  = indexService.getPracticeQuestionsAmount(bankId);
-		practice.addObject("quesAmount",quesAmount);
-		practice.addObject("questionBankTypeList",questionBankTypeList);
-        practice.addObject("quesList",practiceList);
+        List<BankType> questionBankTypeList = getQuestionBankTypeList();
+        if(bankId==0){
+            practice.addObject("questionBankTypeList",questionBankTypeList);
+            practice.addObject("quesAmount",0);
+        }
+        else {
+            List<Question> practiceList = indexService.getPracticeQuestions(bankId, page, limit);
+            int quesAmount = indexService.getPracticeQuestionsAmount(bankId);
+            practice.addObject("quesAmount", quesAmount);
+            practice.addObject("questionBankTypeList", questionBankTypeList);
+            practice.addObject("quesList", practiceList);
+        }
 		return practice;
 	}
 	// 获取在线学习的文章类型列表

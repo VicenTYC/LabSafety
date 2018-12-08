@@ -14,7 +14,7 @@
 				<li class="layui-nav-item"><a href="getIndex.do" style="color: black;">首页</a></li>
 				<li class="layui-nav-item"><a href="getMoreSystemNotice.do" style="color: black;">系统公告</a></li>
 				<li class="layui-nav-item"><a href="getFileResource.do" style="color: black;">在线学习</a></li>
-				<li class="layui-nav-item"><a href="" style="color: black;">在线练习</a></li>
+				<li class="layui-nav-item"><a href="getPractice.do" style="color: black;">在线练习</a></li>
 				<li class="layui-nav-item"><a href="getMoreRegulation.do" style="color: black;">规章制度</a></li>
 				<li class="layui-nav-item"><a href="fileRules.do" style="color: black;">文件制度</a></li>
 			</ul>
