@@ -10,6 +10,7 @@ public class FileRule {
 	@JsonFormat(pattern = "yy年MM月dd日")
 	private Date file_date;
 	private String file_path; // 存放路径，不包括文件名
+	private String show_name;
 
 	public int getFile_id() {
 		return file_id;
@@ -43,4 +44,11 @@ public class FileRule {
 		this.file_path = file_path;
 	}
 
+	public String getShow_name() {
+		return show_name;
+	}
+
+	public void setShow_name(String show_name) {
+		this.show_name = show_name;
+	}
 }

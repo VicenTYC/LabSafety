@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssm.mapper.SystemMapper">
+    <insert id="addSystemNotice" >
+        insert into system_notice
+        (notice_name, notice_date, notice_content)
+        values
+        (#{param1},#{param3},#{param2})
+    </insert>
+    <insert id="addQuestionBank" parameterType="String">
+        insert into bank_type
+        (bank_name)
+        values (#{param1})
+    </insert>
+    <insert id="addFileBank" parameterType="String">
+        insert into file_type
+        (type_name)
+        values (#{param1})
+    </insert>
+    <select id="findQBank" parameterType="String" resultType="com.ssm.pojo.BankType">
+        select *
+        from bank_type
+        where bank_name = #{param1}
+    </select>
+    <select id="findFBank" parameterType="String" resultType="com.ssm.pojo.FileType">
+        select *
+        from file_type
+        where type_name = #{param1}
+    </select>
+    <insert id="addFileRule" >
+      insert into file_rules
+      (file_name, file_date, file_path, show_name)
+      values
+      (#{param1},#{param3},#{param4},#{param2})
+    </insert>
+</mapper>

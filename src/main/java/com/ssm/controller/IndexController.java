@@ -1,7 +1,6 @@
 package com.ssm.controller;
 
 import com.ssm.pojo.*;
-import com.ssm.service.ExamService;
 import com.ssm.service.IndexService;
 import com.ssm.service.LearnService;
 import org.json.JSONObject;
@@ -161,10 +160,10 @@ public class IndexController {
     
 	// 文件规则下载
 	@RequestMapping("down.do")
-	public void down(HttpServletRequest request, HttpServletResponse response, String rootPath, String fileName)
+	public void down(HttpServletRequest request, HttpServletResponse response, String fileName)
 			throws Exception {
 		// 模拟文件，myfile.txt为需要下载的文件
-		String filePath = request.getSession().getServletContext().getRealPath(rootPath) + "/" + fileName;
+		String filePath = request.getSession().getServletContext().getRealPath("file") + "/" + fileName;
 		// 获取输入流
 		InputStream bis = new BufferedInputStream(new FileInputStream(new File(filePath)));
 		// 假如以中文名下载的话,转码，免得文件名中文乱码

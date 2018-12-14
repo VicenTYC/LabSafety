@@ -14,7 +14,7 @@
 	    <c:forEach items="${fileRulesList}" var="iter" varStatus="stat">
 	     <div style="height: 28px;">
 	       	<span class='layui-badge-dot layui-bg-blue' style="margin-top:8px"></span>
-	       	<a href='down.do?rootPath=${iter.file_path}&fileName=${iter.file_name}' class="down" path="${iter.file_path}" style="width: 98%;float: right; background: #4d78a21f;">${iter.file_name}</a>
+	       	<a href='down.do?fileName=${iter.file_name}' class="down" path="${iter.file_path}" style="width: 98%;float: right; background: #4d78a21f;">${iter.show_name}</a>
        	</div>
         </c:forEach>
        

