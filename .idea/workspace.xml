@@ -6,46 +6,21 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e623727-066d-418c-b836-4c5d9784db2d" name="Default Changelist" comment="完成部分系统管理员业务">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssm/controller/SystemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssm/service/SystemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/SystemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssm/util/UploadUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Resource/js/edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/system/addfilebank.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/system/addquesbank.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/system/syshome.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/system/sysnotice.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/system/uploadfile.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/84d37fb6-e2a8-43b0-a7fc-47ba73716af5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/84d37fb6-e2a8-43b0-a7fc-47ba73716af5.xml" afterDir="false" />
+    <list default="true" id="5e623727-066d-418c-b836-4c5d9784db2d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/system/regulation.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/system/studyonline.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/pojo/FileRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/pojo/FileRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/pojo/Regulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/pojo/Regulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resource/js/font/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Resource/css/font/iconfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resource/js/font/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Resource/css/font/iconfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resource/js/font/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Resource/css/font/iconfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resource/js/font/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Resource/css/font/iconfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resource/js/lay/modules/layedit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Resource/js/lay/modules/layedit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/filerules.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/filerules.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/FileRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/pojo/FileRule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/Regulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/pojo/Regulation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/font/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/font/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/font/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/font/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/layedit.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/lay/modules/layedit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/pojo/FileRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/pojo/FileRule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/pojo/Regulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/WEB-INF/classes/com/ssm/pojo/Regulation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/filerules.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/filerules.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/controller/SystemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/controller/SystemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/service/SystemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/service/SystemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/SystemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/SystemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Resource/js/layui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Resource/js/layui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/system/syshome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/system/syshome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/system/sysnotice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/system/sysnotice.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/system/uploadfile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/system/uploadfile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/layui.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/layui.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,14 +61,7 @@
         <item name="labsafety@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="labsafety: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="bank_type: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="labsafety@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="labsafety: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="file_rules: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="learning_file: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -104,69 +72,64 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/uploadfile.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-              <folding>
-                <element signature="n#style#0;n#fieldset#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/SystemController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="77" column="87" lean-forward="true" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="87" />
+            <state relative-caret-position="33">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://84d37fb6-e2a8-43b0-a7fc-47ba73716af5/schema/labsafety/table/file_rules">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/mapper/IndexMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="830">
-              <caret line="37" column="49" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/filerules.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#2616#2632#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/syshome.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1133">
+              <caret line="209" column="20" lean-forward="true" selection-start-line="209" selection-start-column="20" selection-end-line="209" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/SystemService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="759">
+              <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/SystemServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1548#1549#0" expanded="true" />
+                <element signature="e#1613#1614#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="169" column="45" selection-start-line="169" selection-start-column="37" selection-end-line="169" selection-end-column="45" />
+            <state relative-caret-position="158">
+              <caret line="118" column="77" selection-start-line="118" selection-start-column="56" selection-end-line="118" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,26 +138,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/util/MapRequestVO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/sysnotice.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="165">
+              <caret line="138" column="37" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="37" />
               <folding>
-                <element signature="e#160#161#0" expanded="true" />
-                <element signature="e#189#190#0" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/addquesbank.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/regulation.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="29" />
-              <folding>
-                <element signature="n#style#0;n#fieldset#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="319">
+              <caret line="139" column="35" selection-start-line="139" selection-start-column="22" selection-end-line="139" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -202,8 +161,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="938">
-              <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+            <state relative-caret-position="297">
+              <caret line="42" column="49" lean-forward="true" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -211,8 +170,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+            <state relative-caret-position="267">
+              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -226,8 +185,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -241,6 +200,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="VicenTYC &lt;37906458+vicentyc@users.noreply.github.com&gt;" />
         <option value="VicenTYC" />
       </list>
     </option>
@@ -263,21 +223,26 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/pojo/Regulation.java" />
         <option value="E:/文档/JavaEE/富文本/Kz.layedit/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/system/sysnotice.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/system/addfilebank.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/util/uploadFile.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/system/syshome.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/pojo/FileRule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/service/SystemService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/SystemServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/util/UploadUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/controller/SystemController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/system/addquesbank.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/system/uploadfile.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/filerules.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/system/stydeyonline.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/system/stydyonline.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/system/uploadfile.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/system/studyonline.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/system/sysnotice.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/system/regulation.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/service/SystemService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/SystemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/controller/SystemController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/system/syshome.jsp" />
       </list>
     </option>
   </component>
@@ -310,7 +275,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -334,55 +299,6 @@
               <item name="LabSafety-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LabSafety-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LabSafety-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LabSafety-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LabSafety-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LabSafety-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LabSafety-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -392,15 +308,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LabSafety-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
@@ -410,14 +317,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544787997798" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544955922879" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -429,17 +336,20 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.ssm.mapper" />
-      <recent name="com.ssm.service" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\LabSafety-master\src\main\webapp" />
+      <recent name="E:\IdeaProjects\LabSafety-master\src\main\webapp\Resource\css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\IdeaProjects\LabSafety-master\src\main\webapp\jsp\system" />
+      <recent name="E:\IdeaProjects\LabSafety-master\target\ssm-0.0.1-SNAPSHOT\Resource\js" />
       <recent name="E:\IdeaProjects\LabSafety-master\src\main\webapp\Resource\js" />
       <recent name="E:\IdeaProjects\LabSafety-master\src\main\webapp\Resource\js\lay\modules" />
+      <recent name="E:\IdeaProjects\LabSafety-master\src\main\webapp\system" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\IdeaProjects\LabSafety-master\src\main\webapp\Resource\css" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ssm.mapper" />
+      <recent name="com.ssm.service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -456,7 +366,6 @@
   </component>
   <component name="RunManager">
     <configuration name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.91" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
@@ -547,17 +456,26 @@
       <workItem from="1544268208483" duration="6493000" />
       <workItem from="1544410389036" duration="1121000" />
       <workItem from="1544675813082" duration="11828000" />
-      <workItem from="1544756696976" duration="22658000" />
+      <workItem from="1544756696976" duration="22904000" />
+      <workItem from="1544931590805" duration="20503000" />
     </task>
+    <task id="LOCAL-00001" summary="完成部分系统管理员业务">
+      <created>1544788154762</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544788154762</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54300000" />
+    <option name="totallyTimeSpent" value="75049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49825174" visible="true" weight="0.17270789" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49825174" visible="true" weight="0.15458423" />
       <window_info id="Structure" order="1" sideWeight="0.50174826" side_tool="true" weight="0.17110874" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -573,9 +491,49 @@
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Application Servers" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.23644252" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.23618636" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.19522777" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.39696312" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.329718" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="15" visible="true" weight="0.3340564" />
+      <window_info anchor="bottom" id="Database Console" order="16" weight="0.329718" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="JSF" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="CDI" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.13006397" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
+      <window_info anchor="right" id="Maven" order="12" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49825174" weight="0.17430703" />
+      <window_info id="Structure" order="1" sideWeight="0.50174826" side_tool="true" weight="0.17110874" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.50174826" side_tool="true" weight="0.17110874" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" sideWeight="0.50174826" side_tool="true" weight="0.17110874" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.3991323" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Application Servers" order="6" weight="0.32899022" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.23618636" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.39696312" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.329718" />
@@ -590,12 +548,12 @@
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="CDI" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="right" id="Database" order="8" weight="0.12953092" />
+      <window_info anchor="right" id="Database" order="8" weight="0.13059701" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info anchor="right" id="Bean Validation" order="11" />
       <window_info anchor="right" id="Maven" order="12" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -604,109 +562,7 @@
     <MESSAGE value="完成部分系统管理员业务" />
     <option name="LAST_COMMIT_MESSAGE" value="完成部分系统管理员业务" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ssm/controller/IndexController.java</url>
-          <line>165</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Resource/css/exam_test.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/Resource/css/learnfile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="40" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/IndexService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://84d37fb6-e2a8-43b0-a7fc-47ba73716af5/schema/labsafety/table/practice_question_bank">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/IndexServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1947">
-          <caret line="75" column="50" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="50" />
-          <folding>
-            <element signature="e#2270#2271#0" expanded="true" />
-            <element signature="e#2330#2331#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/fileresource.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5115">
-          <caret line="155" column="37" selection-start-line="155" selection-start-column="28" selection-end-line="155" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/LearnController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3201">
-          <caret line="114" column="32" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/practice.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9867">
-          <caret line="86" column="102" selection-start-line="86" selection-start-column="102" selection-end-line="86" selection-end-column="102" />
-          <caret line="275" column="184" selection-start-line="275" selection-start-column="184" selection-end-line="275" selection-end-column="184" />
-          <caret line="287" column="178" selection-start-line="287" selection-start-column="178" selection-end-line="287" selection-end-column="178" />
-          <caret line="299" column="178" selection-start-line="299" selection-start-column="178" selection-end-line="299" selection-end-column="178" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2046">
-          <caret line="62" column="110" selection-start-line="62" selection-start-column="110" selection-end-line="62" selection-end-column="110" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/top.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/teacher/common/linkcss.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/mapper/LearnMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://84d37fb6-e2a8-43b0-a7fc-47ba73716af5/schema/labsafety/table/exam">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -766,13 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/文档/JavaEE/富文本/Kz.layedit/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3993">
-          <caret line="121" column="6" selection-start-line="107" selection-start-column="7" selection-end-line="121" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/pojo/FileType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -808,13 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://84d37fb6-e2a8-43b0-a7fc-47ba73716af5/schema/labsafety/table/system_notice">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/exam/exam.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-726">
@@ -836,55 +678,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/sysnotice.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://84d37fb6-e2a8-43b0-a7fc-47ba73716af5/schema/labsafety/table/bank_type">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/teacher/teacher/importquestions.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3462">
           <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/addfilebank.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/SystemServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/SystemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/syshome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="53" column="17" lean-forward="true" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -918,10 +715,140 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/util/MapRequestVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="e#160#161#0" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/addquesbank.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/filerules.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/mapper/IndexMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="830">
+        <state relative-caret-position="498">
           <caret line="37" column="49" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/colorpicker.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Resource/js/lay/modules/code.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Resource/js/layui.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/addfilebank.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="15" column="10" selection-start-line="10" selection-start-column="4" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/Resource/js/layui.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://E:/文档/JavaEE/富文本/Kz.layedit/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="105" column="51" lean-forward="true" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/uploadfile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/studyonline.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="121" column="34" selection-start-line="121" selection-start-column="22" selection-end-line="121" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/regulation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="139" column="35" selection-start-line="139" selection-start-column="22" selection-end-line="139" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/com/ssm/mapper/SystemMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-124" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/com/ssm/mapper/ExamMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#1447#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/mapper/LearnMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://84d37fb6-e2a8-43b0-a7fc-47ba73716af5/schema/labsafety/table/bank_type">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://84d37fb6-e2a8-43b0-a7fc-47ba73716af5/schema/labsafety/table/regulation_rules">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven/repository/org/mybatis/mybatis/3.2.8/mybatis-3.2.8-sources.jar!/org/apache/ibatis/binding/MapperProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://84d37fb6-e2a8-43b0-a7fc-47ba73716af5/schema/labsafety/table/system_notice">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -932,86 +859,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/uploadfile.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/sysnotice.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+        <state relative-caret-position="165">
+          <caret line="138" column="37" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="37" />
           <folding>
-            <element signature="n#style#0;n#fieldset#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/SystemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1548#1549#0" expanded="true" />
+            <element signature="e#1613#1614#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+        <state relative-caret-position="267">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/util/MapRequestVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="e#160#161#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/addquesbank.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#fieldset#0;n#div#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="938">
-          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+        <state relative-caret-position="297">
+          <caret line="42" column="49" lean-forward="true" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/SystemController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/SystemService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="77" column="87" lean-forward="true" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/filerules.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="759">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="169" column="45" selection-start-line="169" selection-start-column="37" selection-end-line="169" selection-end-column="45" />
+        <state relative-caret-position="158">
+          <caret line="118" column="77" selection-start-line="118" selection-start-column="56" selection-end-line="118" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1133">
+          <caret line="209" column="20" lean-forward="true" selection-start-line="209" selection-start-column="20" selection-end-line="209" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/controller/SystemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2616#2632#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/syshome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
         </state>
       </provider>
     </entry>

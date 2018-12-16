@@ -18,8 +18,12 @@ public class SystemServiceImpl implements SystemService {
     @Autowired
     SystemMapper systemMapper;
 
-    public int addSystemNotice(String title, String content, Date date) {
+   /* public int addSystemNotice(String title, String content, Date date) {
         return systemMapper.addSystemNotice(title,content,date);
+    }*/
+
+    public int addSystemRegulation(String title, String content, Date date) {
+        return  systemMapper.addSystemRegulation(title,content,date);
     }
 
     public int addQuestionBank(String bankName) {
@@ -36,5 +40,13 @@ public class SystemServiceImpl implements SystemService {
 
     public int addFileRule(String name, String realName, Date date, String path) {
         return systemMapper.addFileRule(name,realName,date,path);
+    }
+
+    public int addLearnFile(String content, String fileType, String title, Date date) {
+        return systemMapper.addLearnFile(content,fileType,title,date);
+    }
+
+    public int addNotice(String title, String content, Date date) {
+        return systemMapper.addNotice(title,content,date);
     }
 }

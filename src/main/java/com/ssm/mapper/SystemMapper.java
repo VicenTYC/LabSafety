@@ -13,9 +13,6 @@ import java.util.Date;
  * @date:2018/12/13
  **/
 public interface SystemMapper {
-
-    int addSystemNotice(String title, String content, Date date);
-
     int addQuestionBank(String bankName);
 
     int addFileBank(String bankName);
@@ -24,5 +21,11 @@ public interface SystemMapper {
 
     FileType findFBank(String bankName);
 
-    int addFileRule( String name, String realName,Date date, String path);
+    int addFileRule(String name, String realName, Date date, String path);
+
+    int addLearnFile(String content, String fileType, String title, Date date);
+
+    int addSystemRegulation(String title, String content, Date date);
+
+    int addNotice(String title, String content, Date date);
 }

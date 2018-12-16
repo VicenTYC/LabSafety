@@ -28,14 +28,14 @@
             <li class="layui-nav-item">
                 <a href="javascript:;">
                     <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
-                    TYC
+                    管理员
                 </a>
                 <dl class="layui-nav-child">
                     <dd><a href="">基本资料</a></dd>
                     <dd><a href="">安全设置</a></dd>
                 </dl>
             </li>
-            <li class="layui-nav-item"><a href="">退出</a></li>
+            <li class="layui-nav-item"><a href="/labsafety/">退出</a></li>
         </ul>
     </div>
 
@@ -48,9 +48,11 @@
                 </li>
                 <li class="layui-nav-item"><a href="sysIndex.do?op=questionbank">题库维护</a></li>
                 <li class="layui-nav-item"><a href="sysIndex.do?op=filebank">文件库维护</a></li>
-                <li class="layui-nav-item"><a href="sysIndex.do?op=uploadfile">学习文件</a></li>
-                <li class="layui-nav-item"><a href="">文件制度</a></li>
-                <li class="layui-nav-item"><a href="">规章制度</a></li>
+                <li class="layui-nav-item"><a href="sysIndex.do?op=uploadfile">制度文件</a></li>
+                <li class="layui-nav-item">
+                    <a href="sysIndex.do?op=studyonline">在线学习</a>
+                </li>
+                <li class="layui-nav-item"><a href="sysIndex.do?op=regulation">规章制度</a></li>
             </ul>
         </div>
     </div>
@@ -69,8 +71,21 @@
         <c:if test="${op == 'uploadfile'}">
             <jsp:include page="uploadfile.jsp"></jsp:include>
         </c:if>
+        <c:if test="${op == 'studyonline'}">
+            <jsp:include page="studyonline.jsp"></jsp:include>
+        </c:if>
+        <c:if test="${op == 'regulation'}">
+            <jsp:include page="regulation.jsp"></jsp:include>
+        </c:if>
     </div>
 
 </div>
+<script>
+    //JavaScript代码区域
+    layui.use('element', function(){
+        var element = layui.element;
+
+    });
+</script>
 </body>
 </html>

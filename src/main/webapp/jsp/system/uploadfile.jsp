@@ -23,7 +23,7 @@
         //执行实例
         var uploadInst = upload.render({
             elem: '#test1' //绑定元素
-            ,url: 'uploadFileRule.do' //上传接口
+            ,url: 'uploadFile.do' //上传接口
             ,accept: 'file'
             ,exts: 'doc|docx|txt'
             ,drag: true

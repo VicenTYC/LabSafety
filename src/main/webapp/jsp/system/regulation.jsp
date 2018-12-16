@@ -6,10 +6,11 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!-- 内容主体区域 -->
 <div class="layui-form-item">
     <fieldset class="layui-elem-field layui-field-title" style="margin-top: 25px;">
-        <legend>添加系统公告</legend>
+        <legend>添加规章制度 </legend>
     </fieldset>
 
 </div>
@@ -136,7 +137,7 @@
             data.field['content'] = layedit.getContent(ieditor);
             console.log(data);
             $.ajax({
-                url: 'addSystemNotice.do',
+                url: 'addRegulation.do',
                 method: 'post',
                 data: data.field,
                 dataType: 'JSON',

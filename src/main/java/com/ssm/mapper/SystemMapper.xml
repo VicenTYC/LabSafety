@@ -3,11 +3,12 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ssm.mapper.SystemMapper">
-    <insert id="addSystemNotice" >
-        insert into system_notice
-        (notice_name, notice_date, notice_content)
-        values
-        (#{param1},#{param3},#{param2})
+    
+    <insert id="addSystemRegulation">
+       insert into regulation_rules
+       (file_name, file_date, file_content)
+       values
+       (#{param1},#{param3},#{param2})
     </insert>
     <insert id="addQuestionBank" parameterType="String">
         insert into bank_type
@@ -34,5 +35,17 @@
       (file_name, file_date, file_path, show_name)
       values
       (#{param1},#{param3},#{param4},#{param2})
+    </insert>
+    <insert id="addLearnFile">
+        insert into learning_file
+        ( file_name, file_date, file_type, file_content)
+        values
+        (#{param3},#{param4},#{param2},#{param1})
+    </insert>
+    <insert id="addNotice">
+        insert into system_notice
+        (notice_name, notice_date, notice_content)
+        values
+        (#{param1},#{param3},#{param2})
     </insert>
 </mapper>
