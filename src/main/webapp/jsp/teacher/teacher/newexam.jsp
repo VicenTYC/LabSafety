@@ -34,7 +34,7 @@
 		<div class="layui-form-item">
 			<label class="layui-form-label">考试口令</label>
 			<div class="layui-input-block">
-				<input type="text" name="examPwd" required lay-verify="required" autocomplete="off" class="layui-input" placeholder="请输入4-6位数字作为密码">
+				<input type="text" name="exampwd" required lay-verify="required" autocomplete="off" class="layui-input" placeholder="请输入4-6位数字作为密码">
 			</div>
 			<div>
 
