@@ -8,41 +8,23 @@
   <component name="ChangeListManager">
     <list default="true" id="5e623727-066d-418c-b836-4c5d9784db2d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/controller/ExamController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/controller/ExamController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/controller/LearnController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/controller/LearnController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/mapper/ExamMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/mapper/ExamMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/mapper/IndexMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/mapper/IndexMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/mapper/LearnMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/mapper/LearnMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/msg/ServerMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/msg/ServerMsg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/BankType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/pojo/BankType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/Exam.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/pojo/Exam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/ExamQuestion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/pojo/ExamQuestion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/FileRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/pojo/FileRule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/FileType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/pojo/FileType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/LearningFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/pojo/LearningFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/MultChoiceQuestion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/pojo/MultChoiceQuestion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/pojo/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/QuestionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/pojo/QuestionDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/Regulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/pojo/Regulation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/SingleChoiceQuestion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/pojo/SingleChoiceQuestion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/pojo/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/StudentScore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/pojo/StudentScore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/SystemNotice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/pojo/SystemNotice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/pojo/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/pojo/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/ExamService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/service/ExamService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/IndexService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/service/IndexService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/LearnService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/service/LearnService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/impl/ExamServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/service/impl/ExamServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/impl/IndexServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/service/impl/IndexServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/impl/LearnServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/service/impl/LearnServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/util/MapRequestVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/util/MapRequestVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/teacher/newexam.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm-0.0.1-SNAPSHOT/jsp/teacher/teacher/newexam.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/controller/ExamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/controller/ExamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/controller/SystemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/controller/SystemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/pojo/MultChoiceQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/pojo/MultChoiceQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/pojo/SingleChoiceQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/pojo/SingleChoiceQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/service/SystemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/service/SystemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/SystemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/SystemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/util/UploadUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/util/UploadUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/practice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/practice.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/system/addfilebank.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/system/addfilebank.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/system/addquesbank.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/system/addquesbank.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/system/regulation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/system/regulation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/system/studyonline.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/system/studyonline.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/system/syshome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/system/syshome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/system/sysnotice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/system/sysnotice.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/system/uploadfile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/system/uploadfile.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -124,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -154,7 +136,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/sysnotice.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4554">
-              <caret line="138" column="37" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="37" />
+              <caret line="197" selection-start-line="197" selection-end-line="197" />
             </state>
           </provider>
         </entry>
@@ -163,7 +145,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/regulation.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4587">
-              <caret line="139" column="35" selection-start-line="139" selection-start-column="22" selection-end-line="139" selection-end-column="35" />
+              <caret line="193" selection-start-line="193" selection-end-line="193" />
             </state>
           </provider>
         </entry>
@@ -172,7 +154,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1386">
-              <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
+              <caret line="83" column="49" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -492,7 +474,7 @@
       <workItem from="1545023376779" duration="91000" />
       <workItem from="1546092980803" duration="1112000" />
       <workItem from="1546145279897" duration="3542000" />
-      <workItem from="1551152499336" duration="1528000" />
+      <workItem from="1551152499336" duration="2335000" />
     </task>
     <task id="LOCAL-00001" summary="完成部分系统管理员业务">
       <created>1544788154762</created>
@@ -515,17 +497,23 @@
       <option name="project" value="LOCAL" />
       <updated>1546145389236</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="后台管理完善">
+      <created>1551154361537</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1551154361537</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84417000" />
+    <option name="totallyTimeSpent" value="85224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49825174" visible="true" weight="0.1609808" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49825174" visible="true" weight="0.20469083" />
       <window_info id="Structure" order="1" sideWeight="0.50174826" side_tool="true" weight="0.17110874" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -548,7 +536,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="15" visible="true" weight="0.47396964" />
+      <window_info anchor="bottom" id="Run" order="15" visible="true" weight="0.47396964" />
       <window_info anchor="bottom" id="Database Console" order="16" weight="0.329718" />
       <window_info anchor="bottom" id="Statistic" order="17" weight="0.5954447" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -613,7 +601,8 @@
     <MESSAGE value="完成部分系统管理员业务" />
     <MESSAGE value="完成系统管理员业务" />
     <MESSAGE value="添加考试完善" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加考试完善" />
+    <MESSAGE value="后台管理完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="后台管理完善" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/LearnServiceImpl.java">
@@ -925,21 +914,21 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/sysnotice.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4554">
-          <caret line="138" column="37" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="37" />
+          <caret line="197" selection-start-line="197" selection-end-line="197" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/system/regulation.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4587">
-          <caret line="139" column="35" selection-start-line="139" selection-start-column="22" selection-end-line="139" selection-end-column="35" />
+          <caret line="193" selection-start-line="193" selection-end-line="193" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/mapper/SystemMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1386">
-          <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
+          <caret line="83" column="49" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -956,7 +945,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>

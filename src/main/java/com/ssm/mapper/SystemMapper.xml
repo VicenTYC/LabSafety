@@ -30,6 +30,47 @@
         from file_type
         where type_name = #{param1}
     </select>
+    <select id="getNotice" resultType="com.ssm.pojo.SystemNotice">
+        select *
+        from system_notice
+        order by notice_date
+    </select>
+    <select id="getFileRule" resultType="com.ssm.pojo.FileRule">
+        select *
+        from file_rules
+        order by file_date
+    </select>
+    <select id="getLearningFile" parameterType="int" resultType="com.ssm.pojo.LearningFile">
+        select *
+        from learning_file
+        ORDER BY file_date
+        LIMIT #{start},#{num}
+    </select>
+    <select id="getLearingFileCount" resultType="int">
+        select count(*) from learning_file
+    </select>
+    <select id="getRegulation" resultType="com.ssm.pojo.Regulation">
+        select *
+        from regulation_rules
+        order by file_date
+    </select>
+    <delete id="deleteRegulation" parameterType="int">
+        delete from regulation_rules
+        where file_id=#{param1}
+    </delete>
+    <delete id="deleteLearningFile" parameterType="int">
+        delete from learning_file
+        where file_id=#{param1}
+    </delete>
+    <delete id="deleteFileRule" parameterType="int">
+        delete from file_rules
+        where file_id= #{param1}
+    </delete>
+
+    <delete id="deleteNotice" parameterType="int">
+        delete from system_notice
+        where notice_id=#{param1}
+    </delete>
     <insert id="addFileRule" >
       insert into file_rules
       (file_name, file_date, file_path, show_name)

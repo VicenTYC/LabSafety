@@ -1,6 +1,6 @@
 package com.ssm.controller;
 
-import com.ssm.pojo.FileType;
+import com.ssm.pojo.*;
 import com.ssm.service.IndexService;
 import com.ssm.service.SystemService;
 import com.ssm.util.UploadUtil;
@@ -45,19 +45,66 @@ public class SystemController {
             List<FileType> fileTypeList = indexService.getFileTypeList();
             SYSINDEX.addObject("fileList", fileTypeList);
         }
+        if (op.equals("sysnotice")) {
+            List<SystemNotice> noticeList = systemService.getNotice();
+            SYSINDEX.addObject("noticeList", noticeList);
+        }
+        if (op.equals("uploadfile")) {
+            List<FileRule> fileRuleList = systemService.getFileRule();
+            SYSINDEX.addObject("fileRuleList", fileRuleList);
+        }
+        if(op.equals("studyonline")){
+            List<LearningFile> learningFiles = systemService.getLearningFile(1,25);
+            int totalCount = systemService.getLearingFileCount();
+            SYSINDEX.addObject("learningFiles",learningFiles);
+            SYSINDEX.addObject("totalCount",totalCount);
+        }
+        if(op.equals("regulation")){
+            List<Regulation> regulationList = systemService.getRegulation();
+            SYSINDEX.addObject("regulations",regulationList);
+        }
         SYSINDEX.addObject("op", op);
         return SYSINDEX;
     }
 
-   @ResponseBody
-   @RequestMapping("addSystemNotice.do")
-   private int addSystemNotice(String title,String content){
-        int status = systemService.addNotice(title,content,new Date());
-       int res = 200;
-       if (status != 1)
-           res = 500;
-       return res;
-   }
+    @ResponseBody
+    @RequestMapping("getLearningFile.do")
+    private List<LearningFile> getLearningFile(int page,int clumnNum){
+        List<LearningFile> res = systemService.getLearningFile(page,clumnNum);
+        return res;
+    }
+    @RequestMapping("deleteSystemNotice.do")
+    private ModelAndView deleteNotice(int noticeId) {
+        systemService.deleteNotice(noticeId);
+        return SYSINDEX;
+    }
+
+    @RequestMapping("deleteFileRule.do")
+    private ModelAndView deleteFileRule(int fileId) {
+        systemService.deleteFileRule(fileId);
+        return SYSINDEX;
+    }
+    @RequestMapping("deleteLearningFile.do")
+    private ModelAndView deleteLearningFile(int fileId){
+        systemService.deleteLearningFile(fileId);
+        return SYSINDEX;
+    }
+    @RequestMapping("deleteRegulation.do")
+    private ModelAndView deleteRegulation(int id){
+        systemService.deleteRegulation(id);
+        return SYSINDEX;
+    }
+
+    @ResponseBody
+    @RequestMapping("addSystemNotice.do")
+    private int addSystemNotice(String title, String content) {
+        int status = systemService.addNotice(title, content, new Date());
+        int res = 200;
+        if (status != 1)
+            res = 500;
+        return res;
+    }
+
     @ResponseBody
     @RequestMapping("addRegulation.do")
     private int addSystemRegulation(String title, String content) {
@@ -67,18 +114,18 @@ public class SystemController {
             res = 500;
         return res;
     }
+
     @ResponseBody
     @RequestMapping("addLearnFile.do")
-    private Map<String,Object> addLearnFile(String content,String fileType,String title){
-        Map<String,Object> res = new HashMap<String, Object>();
-        int status = systemService.addLearnFile(content,fileType,title,new Date());
-        if(status==1){
-            res.put("code",0);
-            res.put("msg","添加成功");
-        }
-        else{
-            res.put("code",-1);
-            res.put("msg","添加失败");
+    private Map<String, Object> addLearnFile(String content, String fileType, String title) {
+        Map<String, Object> res = new HashMap<String, Object>();
+        int status = systemService.addLearnFile(content, fileType, title, new Date());
+        if (status == 1) {
+            res.put("code", 0);
+            res.put("msg", "添加成功");
+        } else {
+            res.put("code", -1);
+            res.put("msg", "添加失败");
         }
         return res;
     }
@@ -112,7 +159,7 @@ public class SystemController {
                 UploadUtil.uploadFile(file, path, fileName);
                 res.put("code", 0);
                 res.put("name", realName);
-                res.put("filepath",midPath+"/"+fileName);
+                res.put("filepath", midPath + "/" + fileName);
             } else {
                 res.put("code", 0);
                 res.put("name", realName);
@@ -123,12 +170,13 @@ public class SystemController {
         }
         return res;
     }
+
     @ResponseBody
     @RequestMapping("deleteFile.do")
-    private int deleteFile(HttpServletRequest request,String imgpath){
-       String imageName = imgpath.replace("http://localhost:8080/labsafety/images/","");
+    private int deleteFile(HttpServletRequest request, String imgpath) {
+        String imageName = imgpath.replace("http://localhost:8080/labsafety/images/", "");
         String path = request.getSession().getServletContext().getRealPath("images");
-        File file=new File(path+"/"+imageName);
+        File file = new File(path + "/" + imageName);
         file.delete();
         return 200;
     }

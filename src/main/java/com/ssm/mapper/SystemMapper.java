@@ -1,10 +1,10 @@
 package com.ssm.mapper;
 
-import com.ssm.pojo.BankType;
-import com.ssm.pojo.FileType;
+import com.ssm.pojo.*;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author: create by TianYc
@@ -28,4 +28,22 @@ public interface SystemMapper {
     int addSystemRegulation(String title, String content, Date date);
 
     int addNotice(String title, String content, Date date);
+
+    List<SystemNotice> getNotice();
+
+    int deleteNotice(int noticeId);
+
+    List<FileRule> getFileRule();
+
+    int deleteFileRule(int fileId);
+
+    List<LearningFile> getLearningFile(@Param("start")int startClumn, @Param("num")int clumn);
+
+    int getLearingFileCount();
+
+    int deleteLearningFile(int fileId);
+
+    List<Regulation> getRegulation();
+
+    int deleteRgulation(int id);
 }
