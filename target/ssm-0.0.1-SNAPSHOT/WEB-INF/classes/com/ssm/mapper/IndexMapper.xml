@@ -83,7 +83,7 @@
     <insert id="addStudentScore">
        insert into
         student_score
-       (exam_id,student_id,score,wrong_question,student_college,student_major,student_name)
+       (exam_id,student_id,score,wrong_question,student_college,student_major,student_name,exam_begin_time)
        values
        (#{param1},#{param2},#{param3},#{param4},#{param5},#{param6},#{param7},#{param8})
        
